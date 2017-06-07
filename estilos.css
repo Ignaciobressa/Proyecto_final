@@ -1,0 +1,104 @@
+@charset "ISO-8859-1";
+/* CSS Document */
+
+#contenedor_grande {
+  width: 960px;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-left: auto;
+  opacity: 0.7;
+  filter: alpha(opacity=70); /* Para IE8 y anteriores */
+}
+
+#encabezado {
+  width: 960px;
+  margin-top: 5px;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-left: auto;
+  background-color: #ffffff;
+  border: 3px solid black;
+  opacity: 0.8;
+  filter: alpha(opacity=80); /* Para IE8 y anteriores */
+}
+
+#contenedor {
+  align-items: center;
+  width: 960px;
+  margin-top: 5px;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-left: auto;
+  background-color: #ffffff;
+  border: 3px solid black;
+
+}
+
+.img1 {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-left: 25px;
+  margin-top: 25px;
+  border-top: 3px;
+  border-bottom: 3px;
+  border-left: 3px;
+  border-right: 3px;
+  width: 960px;
+  background-image: url("imagenes/plato2.jpg");
+}
+
+.img2 {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-left: 25px;
+  margin-top: 25px;
+  border-top: 3px;
+  border-bottom: 3px;
+  border-left: 3px;
+  border-right: 3px;
+  width: 960px;
+  background-image: url("imagenes/vino2.jpg");
+}
+
+.img3 {
+  float: none;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-left: 25px;
+  margin-top: 25px;
+  border-top: 3px;
+  border-bottom: 3px;
+  border-left: 3px;
+  border-right: 3px;
+  width: 960px;
+  background-image: url("imagenes/restaurante2.jpg");
+}
+
+.logo {
+  float: none;
+  margin-left: 10px;
+}
+
+body {
+  background-image: url("imagenes/fondo1.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+h1 {
+  float: right;
+  text-align: center;
+  margin-top: 43px;
+  margin-right: 130px;
+  font-weight: bold;
+  color: #000000;
+  font-family: futura;
+}
+
+p {
+  text-align: justify;
+  margin-top: 20px;
+  font-weight: bold;
+  color: #000000;
+}
