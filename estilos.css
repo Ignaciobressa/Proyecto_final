@@ -32,7 +32,16 @@
   margin-left: auto;
   background-color: #ffffff;
   border: 3px solid black;
+}
 
+#contenedor_reservas{
+  align-items: center;
+  width: 940px;
+  margin-top: 50px;
+  margin-right: 5px;
+  margin-bottom: 50px;
+  margin-left: 5px;
+  background-color: #ffffff;
 }
 
 .img1 {
