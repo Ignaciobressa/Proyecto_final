@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <title>Reservas</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="estilos.css" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div id="contenedor_grande">
+
+    <!--Menu Superior-->
+
+    <div class="container-fluid" style="margin-top: 5px">
+      <div class="row">
+        <div class="col-md-12">
+          <ul class="nav nav-pills">
+            <li role="presentation"><a href="index.html">Inicio</a></li>
+            <li role="presentation" class="active"><a href="#">Reservas</a></li>
+            <li style="margin-top: 3px" class="dropdown">
+              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                Menú
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                <li><a href="menu_entradas.html">Entradas</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="menu_principal.html">Platos Principales</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="menu_postres.html">Postres</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="menu_bebidas.html">Bebidas</a></li>
+              </ul></li>
+            <li role="presentation"><a href="contacto.html">Contactenos</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!--Imagen de presentacion-->
+
+    <div id="encabezado">
+      <div class="logo">
+        <img src="imagenes/logo.jpg">
+        <h1>Nombre Restaurante</h1>
+      </div>
+    </div>
+
+    <br>  <!--Datos Reserva-->
+
+    <div id="contenedor">
+
+      <div class="row" id="contenedor_reservas">
+        <div class="col-md-6">
+          <div class="input-group">
+            <span class="input-group-addon" id="basic-addon1">Nombre</span>
+            <input type="text" class="form-control" placeholder="Gordon" aria-describedby="basic-addon1">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="input-group">
+            <span class="input-group-addon" id="basic-addon2">Apellido</span>
+            <input type="text" class="form-control" placeholder="Ramsey" aria-describedby="basic-addon2">
+          </div>
+        </div>
+      </div>
+
+      <div class="row" id="contenedor_reservas">
+        <div class="col-md-6">
+          <div class="input-group">
+            <span class="input-group-addon" id="basic-addon3">Fecha de Reserva</span>
+            <input type="date" class="form-control" name="fReserva" aria-describedby="basic-addon3" placeholder="31/07/1996">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="input-group">
+            <span class="input-group-addon" id="basic-addon4">Hora</span>
+            <input type="time" class="form-control" aria-describedby="basic-addon4" placeholder="23:00">
+          </div>
+        </div>
+      </div>
+
+      <div class="row" id="contenedor_reservas">
+        <div class="col-md-6">
+          <div class="input-group">
+            <span class="input-group-addon" id="basic-addon5">E-Mail</span>
+            <input type="mail" class="form-control" aria-describedby="basic-addon5" placeholder="chefRamsey@gmail.com">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="input-group">
+            <span class="input-group-addon" id="basic-addon1">Tel.:</span>
+            <input type="number" class="form-control" aria-describedby="basic-addon1" placeholder="2944******">
+          </div>
+        </div>
+      </div>
+
+      <div class="row" id="contenedor_reservas">
+        <div class="col-md-12">
+          <input type="button" value="Resevar" align=center>
+        </div>
+      </div>
+    </div>
+
+    <br>
+
+    <div id="contenedor">
+      <div class="row">
+        <div class="img1">
+          <div class="col-md-4" >
+            <img src="imagenes/plato2.jpg">
+            <br>
+            <p>Nuestra excelente cocina se destaca<br>por sus sabores particulares <br>de la patagonia<br>
+              Deleitese con nuestros <br>exquisitos platos.</p>
+          </div>
+        </div>
+        <div class="img2">
+          <div class="col-md-4">
+            <img src="imagenes/vino2.jpg">
+            <p>Nuestra cava le ofrece una<br> excelente variedad de vinos entre<br> los que se destacan<br>
+              nuestros varietales organicos.</p>
+          </div>
+        </div>
+        <div class="img3">
+          <div class="col-md-4">
+            <img src="imagenes/restaurante2.jpg">
+            <p>Tranquilidad, Amplio espacio, vista al <br>lago. Un lugar para disfrutar con todos<br>
+              los sentidos. Nuestra experiencia <br>avala nuestra trayectoria.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+</body>
+</html>
