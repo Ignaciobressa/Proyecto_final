@@ -15,7 +15,6 @@
   margin-right: auto;
   margin-bottom: 0px;
   margin-left: auto;
-  color: white;
   background: transparent;
 }
 
@@ -26,64 +25,14 @@
   margin-right: auto;
   margin-bottom: 0px;
   margin-left: auto;
-  background-color: #ffffff;
   background: transparent;
-}
-
-#contenedor_reservas{
-  align-items: center;
-  width: 940px;
-  margin-top: 50px;
-  margin-right: 5px;
-  margin-bottom: 50px;
-  margin-left: 5px;
-  background-color: #ffffff;
-}
-
-.img1 {
-  margin-right: 10px;
-  margin-bottom: 10px;
-  margin-left: 25px;
-  margin-top: 25px;
-  border-top: 3px;
-  border-bottom: 3px;
-  border-left: 3px;
-  border-right: 3px;
-  width: 960px;
-  background-image: url("imagenes/plato2.jpg");
-}
-
-.img2 {
-  margin-right: 10px;
-  margin-bottom: 10px;
-  margin-left: 25px;
-  margin-top: 25px;
-  border-top: 3px;
-  border-bottom: 3px;
-  border-left: 3px;
-  border-right: 3px;
-  width: 960px;
-  background-image: url("imagenes/vino2.jpg");
-}
-
-.img3 {
-  float: none;
-  margin-right: 10px;
-  margin-bottom: 10px;
-  margin-left: 25px;
-  margin-top: 25px;
-  border-top: 3px;
-  border-bottom: 3px;
-  border-left: 3px;
-  border-right: 3px;
-  width: 960px;
-  background-image: url("imagenes/restaurante2.jpg");
+  color: white;
 }
 
 .logo {
-  margin-top: 100px;
+  margin-top: 50px;
   margin-left: 350px;
-  margin-bottom: 100px;
+  margin-bottom: 30px;
   opacity: 0.6;
 }
 
@@ -91,27 +40,21 @@ body {
   background-image: url("imagenes/fondo_vino_index.jpg");
   background-repeat: round;
   background-attachment: fixed;
-
 }
 
-h1 {
-  float: right;
-  margin-right: 100px;
+.texto_principal, h1 {
+  color: white;
   font-weight: bold;
-  font-family: futura;
-}
-
-h3 {
-  color: red;
-  text-align: left;
-  font-weight: bold;
+  font-family: times serif;
 }
 
 p {
+  color: white;
   text-align: justify;
   margin-top: 20px;
   font-weight: bold;
-  color: white;
+  font-size: 18px;
+  font-family: times serif;
 }
 
 /* Remove the navbar's default margin-bottom and rounded borders */
@@ -121,7 +64,16 @@ p {
 }
 
 footer {
-  background: transparent;
+  background: black;
   color: white;
-  padding: 15px;
+  high: 5px;
+}
+
+.texto_footer {
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 12px;
+  font-family: courier;
 }
