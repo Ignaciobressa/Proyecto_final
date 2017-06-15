@@ -1,115 +1,114 @@
 <!DOCTYPE html>
 <html lang="el">
 <head>
-  <title>Restaurante</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Bodega Familia Cecchin en la Patagonia</title>
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="estilos.css" rel="stylesheet" type="text/css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
-  <div id="contenedor_grande">
 
-    <!--Menu Superior-->
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span> Inicio</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-eye-open"></span> Quienes somos?</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-glass"></span> Nuestros Productos</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-envelope"></span> Contacto</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Registro</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Ingresar</a></li>
+    </ul>
+    </div>
+  </div>
+</nav>
 
-    <div class="container-fluid" style="margin-top: 5px">
-      <div class="row">
-        <div class="col-md-12">
-          <ul class="nav nav-pills">
-            <li role="presentation" class="active"><a href="#">Inicio</a></li>
-            <li role="presentation"><a href="reservas.html">Reservas</a></li>
-            <li style="margin-top: 3px" class="dropdown">
-              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                Menú
-                <span class="caret"></span>
-              </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                <li><a href="menu_entradas.html">Entradas</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="menu_principal.html">Platos Principales</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="menu_postres.html">Postres</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="menu_bebidas.html">Bebidas</a></li>
-              </ul></li>
-            <li role="presentation"><a href="contacto.html">Contactenos</a></li>
-          </ul>
-        </div>
+<div id="encabezado">
+  <div class="logo">
+    <img src="imagenes/logo_vino.gif">
+  </div>
+</div>
+<br>
+<div id="myCarousel" class="carousel slide" data-ride="carousel" align="center">
+  <!-- Indicadores -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+  <!-- Contenedores para slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="imagenes/vinos_car5.jpg" alt="Vino">
+      <div class="carousel-caption">
+    <h3>La excelencia en vinos</h3>
+    <p>Una experiencia innolvidable</p>
+  </div>
+    </div>
+    <div class="item">
+      <img src="imagenes/vinos_car3.jpg" alt="Chicago">
+    </div>
+    <div class="item">
+      <img src="imagenes/vinos_car4.jpg" alt="New York">
+    </div>
+  </div>
+  <!-- Controles derecha e izquierda -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<br>
+<div id="contenedor">
+  <div class="row">
+    <div class="img1">
+      <div class="col-md-4" >
+        <img src="imagenes/plato2.jpg">
+        <br>
+        <p>Nuestra excelente cocina se destaca<br>por sus sabores particulares <br>de la patagonia<br>
+          Deleitese con nuestros <br>exquisitos platos.</p>
       </div>
     </div>
-
-    <!--Imagen de presentacion-->
-
-    <div id="encabezado">
-      <div class="logo">
-        <img src="imagenes/logo.jpg">
-        <h1>Nombre Restaurante</h1>
+    <div class="img2">
+      <div class="col-md-4">
+        <img src="imagenes/vino2.jpg">
+        <p>Nuestra cava le ofrece una<br> excelente variedad de vinos entre<br> los que se destacan<br>
+          nuestros varietales organicos.</p>
       </div>
     </div>
-
-    <br>  <!--Carrousel de imagenes-->
-
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <!-- Indicadores -->
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-      </ol>
-      <!-- Contenedores para slides -->
-      <div class="carousel-inner">
-        <div class="item active">
-          <img src="imagenes/restaurante_car.jpg" alt="Los Angeles">
-        </div>
-        <div class="item">
-          <img src="imagenes/cerveza_car.jpg" alt="Chicago">
-        </div>
-        <div class="item">
-          <img src="imagenes/plato_car.jpg" alt="New York">
-        </div>
-      </div>
-      <!-- Controles derecha e izquierda -->
-      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="right carousel-control" href="#myCarousel" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
-
-    <br>  <!--Descripcion breve de comidas-->
-
-    <div id="contenedor">
-      <div class="row">
-        <div class="img1">
-          <div class="col-md-4" >
-            <img src="imagenes/plato2.jpg">
-            <br>
-            <p>Nuestra excelente cocina se destaca<br>por sus sabores particulares <br>de la patagonia<br>
-              Deleitese con nuestros <br>exquisitos platos.</p>
-          </div>
-        </div>
-        <div class="img2">
-          <div class="col-md-4">
-            <img src="imagenes/vino2.jpg">
-            <p>Nuestra cava le ofrece una<br> excelente variedad de vinos entre<br> los que se destacan<br>
-              nuestros varietales organicos.</p>
-          </div>
-        </div>
-        <div class="img3">
-          <div class="col-md-4">
-            <img src="imagenes/restaurante2.jpg">
-            <p>Tranquilidad, Amplio espacio, vista al <br>lago. Un lugar para disfrutar con todos<br>
-              los sentidos. Nuestra experiencia <br>avala nuestra trayectoria.</p>
-          </div>
-        </div>
+    <div class="img3">
+      <div class="col-md-4">
+        <img src="imagenes/restaurante2.jpg">
+        <p>Tranquilidad, Amplio espacio, vista al <br>lago. Un lugar para disfrutar con todos<br>
+          los sentidos. Nuestra experiencia <br>avala nuestra trayectoria.</p>
       </div>
     </div>
   </div>
-  <br>
+</div>
+</div>
+<br>
+</body>
+</html>
+
+<footer class="container-fluid text-center">
+  <p>Proyecto final</p>
+</footer>
+
 </body>
 </html>
