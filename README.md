@@ -3,9 +3,9 @@ Proyecto final 1er Año
 Lucas Passalacua
 
 Descripcion:
-  El proyecto se basa de un sistema Online capaz de realizar reservas para restaurants
-  o casas de comida, agendando las reservas en una base de datos. El programa consta de
-  2 sitios web, uno para el administrador del restaurant, con la capacidad de modificar
-  reservas, generar nuevas, ver las reservas ya archivadas, etc., y el otro sitio para
-  clientes, que brinda la capacidad de realizar las reservas desde una plataforma
-  mobil o  desde un ordenador.
+  El proyecto se basa de un sistema Online orientado a la venta de vinos orgánicos.
+  Se trata de un sitio tanto informativo como también capáz de permitirle al usuario
+  realizar consultas y gestionar compras comunicandose directamente con el vendedor.
+  Detras del sitio correrá una base de datos donde se alojarán los e-mails y la 
+  información personal de cada uno de los usuarios que hayan realizado previamente 
+  algún tipo de consulta al vendedor o encargado del sitio.
