@@ -32,18 +32,25 @@ p {
 }
 
 .logo {
-  margin-left: 120px;
+  margin-left: 95px;
   opacity: 0.6;
+}
+
+.texto_footer {
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 12px;
+  font-family: courier;
 }
 
 footer {
   background: black;
   color: white;
-  font-size: 12px;
-  font-weight: lighter;
-  padding: 15px;
-  bottom: 0px;
+  high: 5px;
 }
+
 
 #contenedor {
   align-items: center;

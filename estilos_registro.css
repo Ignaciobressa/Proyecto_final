@@ -39,6 +39,15 @@ p {
   opacity: 0.6;
 }
 
+.texto_footer {
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 12px;
+  font-family: courier;
+}
+
 footer {
   background: black;
   color: white;
