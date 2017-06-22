@@ -1,5 +1,19 @@
 @charset "ISO-8859-1";
 
+#encabezado {
+  margin-top: 5px;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-left: auto;
+  background: transparent;
+}
+
+.logo {
+  margin-left: 30px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  opacity: 0.6;
+}
 
 body {
 background-image: url("imagenes/fondo_vino_index.jpg");
@@ -8,11 +22,10 @@ background-attachment: fixed;
 }
 
 .title {
-  color: whitesmoke;
+  color: white;
   text-align: left;
 }
 
 label {
   color: white;
 }
-
