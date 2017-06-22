@@ -42,10 +42,17 @@ body {
   background-attachment: fixed;
 }
 
-.texto_principal, h1 {
+.texto_principal {
   color: white;
   font-weight: bold;
   font-family: times serif;
+}
+
+.texto_principal, h1 {
+  color: white;
+  font-weight: bolder;
+  font-family: serif;
+  font-size: 28px;
 }
 
 p {

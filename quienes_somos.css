@@ -7,6 +7,8 @@
   margin-right: auto;
   margin-bottom: 0px;
   margin-left: auto;
+  background: transparent;
+  color: white;
 }
 
 #encabezado {
@@ -24,6 +26,7 @@
   margin-right: auto;
   margin-bottom: 0px;
   margin-left: auto;
+  opacity: 0.8;
   background: transparent;
   color: white;
 }
@@ -39,4 +42,33 @@ body {
   background-image: url("imagenes/fondo_vino_index.jpg");
   background-repeat: round;
   background-attachment: fixed;
+}
+
+footer {
+  background: black;
+  color: white;
+  high: 5px;
+}
+
+h1 {
+  color: white;
+  font-weight: bold
+  font-family: verdana;
+  font-size: 28px;
+}
+
+.texto_footer {
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 12px;
+  font-family: courier;
+}
+
+.texto_principal {
+  color: white;
+  font-weight: bold;
+  font-family: times serif;
+  font-size: 16px;
 }
