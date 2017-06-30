@@ -1,14 +1,6 @@
 @charset "ISO-8859-1";
 /* CSS Document */
 
-#contenedor_grande {
-  width: 960px;
-  margin-top: 0px;
-  margin-right: auto;
-  margin-bottom: 0px;
-  margin-left: auto;
-}
-
 #encabezado {
   margin-top: 5px;
   margin-right: auto;
@@ -17,7 +9,7 @@
   background: transparent;
 }
 
-#contenedor {
+.texto_principal {
   align-items: center;
   width: 960px;
   margin-top: 5px;
@@ -26,6 +18,7 @@
   margin-left: auto;
   background: transparent;
   color: white;
+  font-family: arial sans-serif;
 }
 
 .logo {
