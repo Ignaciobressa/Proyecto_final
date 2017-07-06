@@ -1,0 +1,71 @@
+@charset "ISO-8859-1";
+
+body {
+  background-image: url("imagenes/fondo_vino_index.jpg");
+  background-repeat: round;
+  background-attachment: fixed;
+}
+
+h1 {
+  float: right;
+  margin-right: 100px;
+  font-weight: bold;
+  font-family: futura;
+}
+
+h3 {
+  color: red;
+  text-align: left;
+  font-weight: bold;
+}
+
+p {
+  text-align: justify;
+  margin-top: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+.logo {
+  margin-left: 95px;
+  opacity: 0.6;
+}
+
+.texto_footer {
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 12px;
+  font-family: courier;
+}
+
+footer {
+  background: black;
+  color: white;
+  margin: auto 0px 0px 0px;
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+
+
+#contenedor {
+  align-items: center;
+  width: 700px;
+  margin-top: 5px;
+  margin-right: auto;
+  margin-bottom: 10px;
+  margin-left: auto;
+  background-color: black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  opacity: 0.9;
+  color: white;
+}
