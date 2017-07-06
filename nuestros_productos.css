@@ -45,6 +45,10 @@ footer {
   bottom: 0px;
 }
 
+.separador {
+  height: 50px;
+}
+
 .texto_footer {
   color: white;
   text-align: center;
