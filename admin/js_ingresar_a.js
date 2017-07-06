@@ -6,13 +6,13 @@ $(document).ready(function() {
 
     if (current == 'hide') {
       $(this).prev().attr('type', 'text');
-      $('#basic-addon2').attr('type', 'text');
-      $(this).removeClass('glyphicon-eye-open').addClass('glyphicon-eye-close').attr('action', 'show');
+      $(this).next.removeClass('glyphicon-eye-open').addClass('glyphicon-eye-close');
+      $(this).attr('action', 'show');
     }
     else if (current == 'show') {
       $(this).prev().attr('type', 'password');
-      $('#basic-addon2').attr('type', 'password');
-      $(this).removeClass('glyphicon-eye-close').addClass('glyphicon-eye-open').attr('action', 'hide');
+      $(this).next.removeClass('glyphicon-eye-close').addClass('glyphicon-eye-open');
+      $(this).attr('action', 'hide');
     }
   })
 })
