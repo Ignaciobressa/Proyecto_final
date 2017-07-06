@@ -1,7 +1,16 @@
 @charset "ISO-8859-1";
 /* CSS Document */
 
+#contenedor_grande {
+  width: 960px;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-left: auto;
+}
+
 #encabezado {
+  width: 960px;
   margin-top: 5px;
   margin-right: auto;
   margin-bottom: 0px;
@@ -9,7 +18,7 @@
   background: transparent;
 }
 
-.texto_principal {
+#contenedor {
   align-items: center;
   width: 960px;
   margin-top: 5px;
@@ -18,20 +27,47 @@
   margin-left: auto;
   background: transparent;
   color: white;
-  font-family: arial sans-serif;
 }
 
 .logo {
-  margin-left: 30px;
   margin-top: 50px;
+  margin-left: 350px;
   margin-bottom: 30px;
   opacity: 0.6;
 }
 
 body {
-  background-image: url("imagenes/fondo_vino_index.jpg");
+  background-image: url("../imagenes/fondo_vino.jpg");
   background-repeat: round;
   background-attachment: fixed;
+}
+
+.texto_principal {
+  color: white;
+  font-weight: bold;
+  font-family: times serif;
+}
+
+.texto_principal, h1 {
+  color: white;
+  font-weight: bolder;
+  font-family: serif;
+  font-size: 28px;
+}
+
+p {
+  color: white;
+  text-align: justify;
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: arial;
+}
+
+/* Remove the navbar's default margin-bottom and rounded borders */
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
 }
 
 footer {
@@ -43,6 +79,10 @@ footer {
   left: 0px;
   right: 0px;
   bottom: 0px;
+}
+
+.separador {
+  height: 120px;
 }
 
 .texto_footer {
