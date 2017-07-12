@@ -1,37 +1,43 @@
 @charset "ISO-8859-1";
 /* CSS Document */
 
-#encabezado {
-  margin-top: 5px;
-  margin-right: auto;
-  margin-bottom: 0px;
-  margin-left: auto;
-  background: transparent;
+label {
+  color: black;
 }
 
-.texto_principal {
-  align-items: center;
-  width: 960px;
-  margin-top: 5px;
-  margin-right: auto;
-  margin-bottom: 0px;
-  margin-left: auto;
-  background: transparent;
-  color: white;
-  font-family: arial sans-serif;
-}
-
-.logo {
-  margin-left: 30px;
-  margin-top: 50px;
-  margin-bottom: 30px;
-  opacity: 0.6;
+#contenedor {
+  background-color: white;
+  opacity: 0.8;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 body {
-  background-image: url("imagenes/fondo_vino_index.jpg");
+  background-image: url("../imagenes/fondo_vino.jpg");
   background-repeat: round;
   background-attachment: fixed;
+}
+
+h1 {
+  color: black;
+  font-weight: bolder;
+  font-family: serif;
+  font-size: 28px;
+}
+
+p {
+  color: black;
+  text-align: justify;
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: arial;
+}
+
+/* Remove the navbar's default margin-bottom and rounded borders */
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
 }
 
 footer {
@@ -43,6 +49,10 @@ footer {
   left: 0px;
   right: 0px;
   bottom: 0px;
+}
+
+.separador {
+  height: 120px;
 }
 
 .texto_footer {

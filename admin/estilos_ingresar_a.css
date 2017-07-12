@@ -1,7 +1,7 @@
 @charset "ISO-8859-1";
 
 body {
-  background-image: url("imagenes/fondo_vino_index.jpg");
+  background-image: url("../imagenes/fondo_vino.jpg");
   background-repeat: round;
   background-attachment: fixed;
 }

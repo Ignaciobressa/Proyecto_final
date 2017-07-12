@@ -61,3 +61,11 @@ p {
   border-radius: 0;
   font-family: courier;
 }
+
+.reg {
+  font-size: 10px;
+  height: 35px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}

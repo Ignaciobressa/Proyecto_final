@@ -1,62 +1,32 @@
 @charset "ISO-8859-1";
 /* CSS Document */
 
-#contenedor_grande {
-  width: 960px;
-  margin-top: 0px;
-  margin-right: auto;
-  margin-bottom: 0px;
-  margin-left: auto;
-}
-
-#encabezado {
-  width: 960px;
-  margin-top: 5px;
-  margin-right: auto;
-  margin-bottom: 0px;
-  margin-left: auto;
-  background: transparent;
+label {
+  color: black;
 }
 
 #contenedor {
-  align-items: center;
-  width: 960px;
-  margin-top: 5px;
-  margin-right: auto;
-  margin-bottom: 0px;
-  margin-left: auto;
-  background: transparent;
-  color: white;
-}
-
-.logo {
-  margin-top: 50px;
-  margin-left: 350px;
-  margin-bottom: 30px;
-  opacity: 0.6;
+  background-color: white;
+  opacity: 0.8;
+  border-radius: 5px;
+  padding: 10px;
 }
 
 body {
-  background-image: url("imagenes/fondo_vino_index.jpg");
+  background-image: url("../imagenes/fondo_vino.jpg");
   background-repeat: round;
   background-attachment: fixed;
 }
 
-.texto_principal {
-  color: white;
-  font-weight: bold;
-  font-family: times serif;
-}
-
-.texto_principal, h1 {
-  color: white;
+h1 {
+  color: black;
   font-weight: bolder;
   font-family: serif;
   font-size: 28px;
 }
 
 p {
-  color: white;
+  color: black;
   text-align: justify;
   margin-top: 20px;
   font-weight: bold;
