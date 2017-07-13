@@ -1,9 +1,10 @@
 @charset "ISO-8859-1";
 
 body {
-  background-image: url("imagenes/fondo_vino_index.jpg");
+  background-image: url("../imagenes/fondo_vino.jpg");
   background-repeat: round;
   background-attachment: fixed;
+
 }
 
 h1 {
@@ -32,7 +33,9 @@ p {
 }
 
 .logo {
-  margin-left: 95px;
+  margin-top: 0px;
+  margin-left: 20px;
+  margin-bottom: 10px;
   opacity: 0.6;
 }
 
@@ -48,24 +51,34 @@ p {
 footer {
   background: black;
   color: white;
-  margin: auto 0px 0px 0px;
-  position: fixed;
-  left: 0px;
-  right: 0px;
+  font-size: 12px;
+  font-weight: lighter;
+  padding: 15px;
   bottom: 0px;
 }
 
+#promocion {
+  padding-left: 100px;
+  font-weight: 2px;
+}
 
 #contenedor {
   align-items: center;
-  width: 700px;
+  width: 960px;
   margin-top: 5px;
   margin-right: auto;
   margin-bottom: 10px;
   margin-left: auto;
   background-color: black;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px;
   opacity: 0.9;
   color: white;
+}
+
+#show-hide-passwd {
+  cursor: pointer;
+}
+
+input {
+  width: 50%;
 }

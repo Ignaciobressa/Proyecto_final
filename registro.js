@@ -13,4 +13,9 @@ $(document).ready(function() {
       $(this).removeClass('glyphicon-eye-close').addClass('glyphicon-eye-open').attr('action', 'hide');
     }
   });
+  $('.login').on('click', function(e) {
+    e.preventDefault();
+
+    $(this).window.open("ingresar.html");
+  });
 });

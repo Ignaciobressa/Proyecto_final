@@ -5,12 +5,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" href="estilos_registro_a.css">
+  <link rel="stylesheet" href="registro_a.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="js_registro.js"></script>
+  <script type="text/javascript" src="registro.js"></script>
 
 </head>
 <body>
@@ -46,7 +46,7 @@
 
   <div class="logo">
         <img src="../imagenes/logo_vino.gif" high="150px" width="150px">
-      </div>
+  </div>
 
   <br>  <!--Formulario de Registro-->
 
@@ -54,35 +54,23 @@
     <div id="contenedor">
 
       <div class="row">
-        <div class="col-md-6">
-          <div class="input-group">
-            <span class="input-group-addon" id="basic-addon1"><b>Nombre:</b></span>
-            <input type="text" class="form-control" placeholder="Coloque aquí su nombre" aria-describedby="basic-addon1">
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="input-group">
-            <span class="input-group-addon" id="basic-addon1"><b>Apellido:</b></span>
-            <input type="text" class="form-control" placeholder="Coloque aquí su apellido" aria-describedby="basic-addon1">
-          </div>
-        </div>
-      </div>
 
-      <br>
+        <div class="col-md-6">
+          <div class="input-group">
+            <input type="text" class="form-control" value="Nombre" id="basic-addon1">
+            <span class="input-group-addon" aria-describedby="basic-addon1"><b>:</b></span>
+            <input type="text" class="form-control" aria-describedby="bassic-addon1" value="Coloque aquí su nombre">
+          </div>
+        </div>
 
-      <div class="row">
         <div class="col-md-6">
           <div class="input-group">
-            <span class="input-group-addon" id="basic-addon1"><b>Tel.:</b></span>
-            <input type="text" class="form-control" placeholder="0294-4******" aria-describedby="basic-addon1">
+            <input type="text" class="form-control" aria-describedby="basic-addon1" value="Apellido">
+            <span class="input-group-addon" id="basic-addon1"><b>:</b></span>
+            <input type="text" class="form-control" aria-describedby="basic-addon1" value="Coloque aquí su apellido">
           </div>
         </div>
-        <div class="col-md-6">
-          <div class="input-group">
-            <span class="input-group-addon" id="basic-addon1"><b>E-Mail:</b></span>
-            <input type="email" class="form-control" placeholder="vinicultores@gmail.com" aria-describedby="basic-addon1">
-          </div>
-        </div>
+
       </div>
 
       <br>
@@ -90,35 +78,60 @@
       <div class="row">
 
         <div class="col-md-6">
-
           <div class="input-group">
+            <input type="text" class="form-control" aria-describedby="basic-addon1" value="Tel.">
+            <span class="input-group-addon" id="basic-addon1"><b>:</b></span>
+            <input type="text" class="form-control" aria-describedby="basic-addon1" value="0294-4******">
+          </div>
+        </div>
 
-            <span class="input-group-addon"><b>Contraseña:</b></span>
-            <input type="password" id="pass" class="form-control" aria-label="Amount (to the nearest dollar)" placeholder="Escriba contraseña">
+        <div class="col-md-6">
+          <div class="input-group">
+            <input type="text" class="form-control" aria-describedby="basic-addon1" value="E-Mail">
+            <span class="input-group-addon" id="basic-addon1"><b>:</b></span>
+            <input type="text" class="form-control" aria-describedby="basic-addon1" value="vinicultores@gmail.com">
+          </div>
+        </div>
+
+      </div>
+
+      <br>
+
+      <div class="row">
+
+        <div class="col-md-6">
+          <div class="input-group">
+            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" value="Contraseña">
+            <span class="input-group-addon"><b>:</b></span>
+            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" value="Escriba contraseña">
             <span class="input-group-addon"><span id="show-hide-passwd" action="hide" class="glyphicon glyphicon-eye-open"></span></span>
-
-            </div>
+          </div>
         </div>
 
         <div class="col-md-6">
           <div class="input-group">
-            <span class="input-group-addon" id="basic-addon2"><b>Confirmar contraseña:</b></span>
-            <input type="password" class="form-control" placeholder="Escriba contraseña" aria-describedby="basic-addon2" name="contra">
+            <input type="text" class="form-control" value="Confirmar Contraseña" aria-describedby="basic-addon2">
+            <span class="input-group-addon" id="basic-addon2"><b>:</b></span>
+            <input type="text" class="form-control" value="Escriba contraseña" aria-describedby="basic-addon2">
           </div>
         </div>
 
       </div>
 
       <br>
-
       <div class="row">
-
         <div class="col-md-4"></div>
 
-        <div class="col-md-4" id="promocion">
-            <input type="checkbox" checked>
-          <span>Desea recibir promociones?</span>
+        <div class="col-lg-4">
+          <div class="input-group">
+            <span class="input-group-addon">
+              <input type="checkbox" aria-label="..." checked style="width:20px">
+            </span>
+            <input type="text" class="form-control" aria-label="..." value="Desea recibir promociónes?">
+          </div>
         </div>
+
+      </div>
 
         <div class="col-md-4"></div>
 

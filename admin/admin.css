@@ -1,19 +1,83 @@
 @charset "ISO-8859-1";
 /* CSS Document */
 
+#contenedor_grande {
+  width: 960px;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-left: auto;
+}
+
+#encabezado {
+  width: 960px;
+  margin-top: 5px;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-left: auto;
+  background: transparent;
+}
+
+#contenedor {
+  align-items: center;
+  width: 960px;
+  margin-top: 5px;
+  margin-right: auto;
+  margin-bottom: 10px;
+  margin-left: auto;
+  background-color: grey;
+  padding: 10px;
+  opacity: 0.9;
+  color: black;
+  border-radius: 5px;
+}
+
+#contenedor_fondo {
+  align-items: center;
+  width: 960px;
+  margin-top: 5px;
+  margin-right: auto;
+  margin-bottom: 10px;
+  margin-left: auto;
+  background-color: grey;
+  padding: 10px;
+  opacity: 1;
+  color: black;
+  border-radius: 5px;
+}
+
+#subir_logo {
+  float: right;
+  width: 75%;
+  margin-top: 40px;
+  opacity: 1;
+  color: black;
+}
+.logo {
+  margin-top: 0px;
+  margin-left: 20px;
+  margin-bottom: 30px;
+  opacity: 0.6;
+  float: left;
+}
+
 body {
   background-image: url("../imagenes/fondo_vino.jpg");
   background-repeat: round;
   background-attachment: fixed;
 }
 
-.titulo {
+.texto_principal {
   color: white;
   font-weight: bold;
-  font-family: arial;
-  font-size: 50px;
-  text-align: center;
-  margin-top: 10px;
+  font-family: times serif;
+}
+
+.texto_principal, h1 {
+  color: black;
+  font-weight: bolder;
+  font-family: serif;
+  font-size: 28px;
 }
 
 p {
@@ -29,5 +93,61 @@ p {
 .navbar {
   margin-bottom: 0;
   border-radius: 0;
+}
+
+footer {
+  background: black;
+  color: white;
+  padding-bottom: 3px;
+  margin: auto 0px 0px 0px;
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+
+.separador {
+  height: 120px;
+}
+
+.texto_footer {
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 12px;
   font-family: courier;
+}
+
+#subir_fondo {
+  float: right;
+  margin-top: 100px;
+  color: black;
+}
+
+#texto_fondo {
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 25px;
+  color: black;
+}
+
+#texto_footer {
+  text-align: center;
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 25px;
+  color: black;
+}
+
+#imagen_fondo {
+  border: 2px solid black;
+  opacity: 1;
+}
+
+#subir_cambios {
+  align: center;
+  color: black;
+  display: flex;
+  justify-content: center;
 }
