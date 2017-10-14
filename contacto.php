@@ -11,41 +11,13 @@
 </head>
 <body>
 
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li><a href="index.html"><span class="glyphicon glyphicon-home"></span> Inicio</a></li>
-        <li><a href="quienes_somos.html"><span class="glyphicon glyphicon-eye-open"></span> Quienes somos?</a></li>
-        <li><a href="nuestros_productos.html"><span class="glyphicon glyphicon-glass"></span> Nuestros Productos</a></li>
-        <li class="active"><a href="Contacto.html"><span class="glyphicon glyphicon-envelope"></span> Contacto</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-      <li><a href="registro.html"><span class="glyphicon glyphicon-user"></span> Registro</a></li>
-      <li><a href="ingresar.html"><span class="glyphicon glyphicon-log-in"></span> Ingresar</a></li>
-    </ul>
-    </div>
-  </div>
-</nav>
+<?php
+  require 'include/menu.php'
+ ?>
 
-<div id="encabezado">
-  <div class="logo">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-12">
-          <img src="imagenes/logo_vino.gif" height="150">
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+<?php
+  require 'include/logo.php'
+ ?>
 
 <form action="/action_page.php">
   </form>
@@ -90,13 +62,10 @@
     <div class="col-md-4">  </div>
   </div>
  </div>
- <form>
 
-<footer class="container-fluid text-center">
-  <div class="panel_footer">
-    <p class="texto_footer"> Jorge Omar Lezano - Representante de la Bodega y Viñedos Familia Cecchín. Telefono: 0294-154519915. San Carlos de Bariloche, Río Negro, Argentina.</p>
-  </div>
-</footer>
+<?php
+  require 'include/footer.php'
+ ?>
 
 
 </body>
