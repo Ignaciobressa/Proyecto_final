@@ -19,46 +19,51 @@
   require 'include/logo.php'
  ?>
 
+<form action="/action_page.php">
+  </form>
+<div class="contacto">
 <div class="container">
-  <div class="row">
-    <div class="col-md-12">
-      <h1 style="color: khaki; font-family: arial sans-serif"> Contacto </h1>
-      <h2 style="color: khaki; font-family: arial sans-serif; font-size: 18px"><em> Escriba sus datos y dejenos su consulta.<br> En la brevedad nos comunicaremos con usted!!</em></h2>
-      <br>
-      <form name="contacto" method="POST" action="send_form_email.php">
-        <tr>
-          <td><div style="color: white; font-family: arial sans-serif; font-size: 12px"> <strong>NOMBRE: </font> </strong></div></td>
-          <td><input type="text" name="nombre" size="30" maxlength="50"> <br></td>
-        </tr>
-        <tr>
-          <td><div style="color: white; font-family: arial sans-serif; font-size: 12px"> <strong>E-MAIL: </font> </strong></div>
-          <td><input  type="text" name="mail" size="30" maxlength="50"> <br></td>
-        </tr>
-        <tr>
-          <td><div style="color: white; font-family: arial sans-serif; font-size: 12px"> <strong>TELÉFONO: </font> </strong></div>
-          <td><input type="text" name="telefono" size="30" maxlength="30"> <br></td>
-        </tr>
-        <tr>
-          <td><div style="color: white; font-family: arial sans-serif; font-size: 12px"> <strong>EMPRESA: </font> </strong></div>
-          <td><input type="text" name="empresa" size="30" maxlength="50"> <br><br></td>
-        </tr>
-        <tr>
-          <td colspan="2"><div><font face="Arial" size="2" color="white"> <strong> MENSAJE: </font> </strong></div>
-          <textarea name="mensaje" cols="40" rows="5" ></textarea><br>
-          <input type="reset" name="Reset" value="BORRAR TODO"/> <input type="submit" name="Submit" value="ENVIAR"/>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-      </form>
-    </div>
+ <div class= "row" >
+    <div class="title">
+    <div class= "col-md-12"> <h1> Contacto </h1> </div>
   </div>
-</div>
+    <br>
+    <br>
+    <br>
+    <br>
+<div class="row">
+    <div class="col-md-6"><input type="mail" name="fname" placeholder="Nombre"></div>
+    <div class="col-md-6"> </div>
+ </div>
+ <div class="row">
+    <div class="col-md-6"><input type="mail" name="fname" placeholder="Apellido"></div>
+    <div class="col-md-6"> </div>
+ </div>
+ <div class="row">
+    <div class="col-md-6"> <input type="text" name="fname" placeholder="Telefono"></div>
+    <div class="col-md-6">  </div>
+ </div>
+ <div class="row">
+    <div class="col-md-6"> <input type="mail" name="fname" placeholder="Mail"> </div>
+    <div class="col-md-6">  </div>
+ </div>
+ <div class="row">
+    <div class="col-md-6"> </div>
+    <div class="col-md-6"> <label> Deje aqui su comentario </label> </div>
+ </div>
+ <div class="row">
+    <div class="col-md-6"> </div>
+    <div class="col-md-6"> <textarea style="width: 500px; height: 150px"></textarea>  </div>
+ </div>
+ <div class="row">
+    <div class="col-md-6"> </div>
+    <div class="col-md-1"> <input type="submit" value="Guardar"> </div>
+    <div class="col-md-1"> <input type="reset" value="Limpiar"> </div>
+    <div class="col-md-4">  </div>
+  </div>
+ </div>
 
 <?php
-
   require 'include/footer.php'
  ?>
 

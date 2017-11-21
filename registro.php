@@ -19,36 +19,30 @@
 
 <!--Menu Superior-->
 <?php
-  require 'include/menu.php';
+  require 'include/menu.php'
  ?>
 
 <!--Logo de la Empresa-->
 <?php
-  require 'include/logo.php';
+  require 'include/logo.php'
  ?>
 
   <br>  <!--Formulario de Registro-->
 
-  <form name="Registro" action="include/registro_usuario.php" method="post">
+  <form name="Registro">
     <div id="contenedor">
-      <div class="row">
-        <div class="col-md-12">
-          <h3 style="text-align: center; color: white; font-family: arial sans-serif"><em>Registre una cuenta de manera <strong>totalmente gratuita</strong> para realizar consultas, <br>
-              pedir presupuestos o recibir promociones!!</em></h3>
-        </div>
-      </div>
-      <br>
+
       <div class="row">
         <div class="col-md-6">
           <div class="input-group">
             <span class="input-group-addon" id="basic-addon1"><b>Nombre:</b></span>
-            <input type="text" class="form-control" name="name" placeholder="Coloque aquí su nombre" aria-describedby="basic-addon1" required>
+            <input type="text" class="form-control" placeholder="Coloque aquí su nombre" aria-describedby="basic-addon1">
           </div>
         </div>
         <div class="col-md-6">
           <div class="input-group">
             <span class="input-group-addon" id="basic-addon1"><b>Apellido:</b></span>
-            <input type="text" class="form-control" name="lastName" placeholder="Coloque aquí su apellido" aria-describedby="basic-addon1" required>
+            <input type="text" class="form-control" placeholder="Coloque aquí su apellido" aria-describedby="basic-addon1">
           </div>
         </div>
       </div>
@@ -59,13 +53,13 @@
         <div class="col-md-6">
           <div class="input-group">
             <span class="input-group-addon" id="basic-addon1"><b>Tel.:</b></span>
-            <input type="text" class="form-control" name="phone" placeholder="0294-4******" aria-describedby="basic-addon1">
+            <input type="text" class="form-control" placeholder="0294-4******" aria-describedby="basic-addon1">
           </div>
         </div>
         <div class="col-md-6">
           <div class="input-group">
             <span class="input-group-addon" id="basic-addon1"><b>E-Mail:</b></span>
-            <input type="email" class="form-control" name="email" placeholder="vinicultores@gmail.com" aria-describedby="basic-addon1" required>
+            <input type="email" class="form-control" placeholder="vinicultores@gmail.com" aria-describedby="basic-addon1">
           </div>
         </div>
       </div>
@@ -79,7 +73,7 @@
           <div class="input-group">
 
             <span class="input-group-addon"><b>Contraseña:</b></span>
-            <input type="password" id="pass" name="password" class="form-control" aria-label="Amount (to the nearest dollar)" placeholder="Escriba contraseña" required>
+            <input type="password" id="pass" class="form-control" aria-label="Amount (to the nearest dollar)" placeholder="Escriba contraseña">
             <span class="input-group-addon"><span id="show-hide-passwd" action="hide" class="glyphicon glyphicon-eye-open"></span></span>
 
             </div>
@@ -88,7 +82,7 @@
         <div class="col-md-6">
           <div class="input-group">
             <span class="input-group-addon" id="basic-addon2"><b>Confirmar contraseña:</b></span>
-            <input type="password" class="form-control" name="rpassword" placeholder="Repita contraseña" aria-describedby="basic-addon2" required>
+            <input type="password" class="form-control" placeholder="Escriba contraseña" aria-describedby="basic-addon2" name="contra">
           </div>
         </div>
 
@@ -101,7 +95,7 @@
         <div class="col-md-4"></div>
 
         <div class="col-md-4" id="promocion">
-            <input type="checkbox" name="prom" checked>
+            <input type="checkbox" checked>
           <span>Desea recibir promociones?</span>
         </div>
 
@@ -118,7 +112,7 @@
     </div>
   </form>
 
-  <div class="separador"></div>   <!--Separador de pagina-->
+  <div class="separador"></div>   <!--Sepadarod de pagina-->
 
   <br>  <!--Pie de pagina-->
 
