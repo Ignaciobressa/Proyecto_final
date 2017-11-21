@@ -4,36 +4,18 @@
   <title>Bodega Familia Cecchin en la Patagonia</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="css/estilos.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"></span> Inicio</a></li>
-        <li><a href="quienes_somos.html"><span class="glyphicon glyphicon-eye-open"></span> Quiénes somos?</a></li>
-        <li><a href="nuestros_productos.html"><span class="glyphicon glyphicon-glass"></span> Nuestros Productos</a></li>
-        <li><a href="contacto.html"><span class="glyphicon glyphicon-envelope"></span> Contacto</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-      <li><a href="registro.html"><span class="glyphicon glyphicon-user"></span> Registro</a></li>
-      <li><a href="ingresar.html"><span class="glyphicon glyphicon-log-in"></span> Ingresar</a></li>
-    </ul>
-    </div>
-  </div>
-</nav>
 
+<?php
+  require 'include/menu.php'
+ ?>
+
+<!-- Logo -->
 <div class="container-fluid">
   <div class="row">
     <div class="col-md-12">
@@ -59,19 +41,19 @@
     <div class="item active">
       <img src="imagenes/vinos_car3.jpg" alt="Vino">
       <div class="carousel-caption">
-        <h3>Para disfrutar en todo momento</h3>
+        <h3 style="color: khaki">Para disfrutar en todo momento</h3>
       </div>
     </div>
     <div class="item">
-      <img src="imagenes/vinos_car5.jpg" alt="vinos organicos">
+      <img src="imagenes/cecchin_car.jpg" alt="vinos organicos">
       <div class="carousel-caption">
-        <h3>Una experiencia innolvidable</h3>
+        <h3 style="text-align: left; color: khaki">Una experiencia innolvidable</h3>
       </div>
     </div>
     <div class="item">
       <img src="imagenes/vinos_car4.jpg" alt="cava vinos">
       <div class="carousel-caption">
-        <h3>Gran selección de vinos en nuestra cava</h3>
+        <h3 style="color: khaki">Gran selección de vinos en nuestra cava</h3>
       </div>
     </div>
   </div>
@@ -94,22 +76,22 @@
       <div class="texto_principal">
         <h1><strong>La excelencia en vinos</strong></h1>
           <br>
-          <p><i>Concebimos nuestro vino orgánico y natural con<br>
+          <p><em>Concebimos nuestro vino orgánico y natural con<br>
              las vides que conviven rodeadas de hierbas y<br>
              todo tipo de  frutales, bajo el estricto control de<br>
             mantener el equilibrio ecológico, siendo la propia<br>
             Naturaleza quien provee la protección de las<br>
             enfermedades que podrían ocasionarse en <br>
-            nuestras plantaciones, gracias a lo cual no utilizamos<br>
-            ningún tipo de químicos sobre el suelo o las plantas<br>
-            que nos regalan sus frutos en estado natural, para<br>
-            lograr NUESTRO REAL VINO ORGÁNICO, cumpliendo<br>
-            todos los estándares que las normas internacionales<br>
-            exigen.  Siendo calificados con el título de<br>
+            nuestras plantaciones, gracias a lo cual no<br> utilizamos
+            ningún tipo de químicos sobre el suelo<br> o las plantas
+            que nos regalan sus frutos en estado<br> natural, para
+            lograr NUESTRO REAL VINO ORGÁNICO<br> cumpliendo
+            todos los estándares que las normas<br> internacionales
+            exigen.  Siendo calificados con el título<br> de
             AGRICULTORES ARTISTAS ARTESANOS, lo que nos<br>
             acredita y permite llevar un verdadero VINO ORGÁNICO<br>
             desde nuestras viñas a su boca, sin los agregados<br>
-            en la botella que limitaría nuestra calificación Internacional.</i></p>
+            en la botella que limitaría nuestra calificación Internacional.</em></p>
       </div>
     </div>
   </div>
@@ -118,16 +100,9 @@
 <div class="separador">
 </div>
 
-<footer class="container-fluid text-center">
-  <div class="panel_footer">
-    <div class="row">
-      <div class="col-md-12">
-        <p class="texto_footer"> Jorge Omar Lezano - Representante de la Bodega y Viñedos Familia Cecchín. Telefono: 0294-154519915. San Carlos de Bariloche, Río Negro, Argentina.</p>
-        <a href="https://www.facebook.com/Bodegacecchin/"><img width="25px" src="imagenes/facebook_logo_red.png"></a>
-      </div>
-    </div>
-  </div>
-</footer>
+<?php
+  require 'include/footer.php';
+?>
 
 </body>
 </html>

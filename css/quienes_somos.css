@@ -1,6 +1,15 @@
 @charset "ISO-8859-1";
 /* CSS Document */
 
+#contenedor_grande {
+  margin-top: 0px;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-left: auto;
+  background: transparent;
+  color: khaki;
+}
+
 #encabezado {
   margin-top: 5px;
   margin-right: auto;
@@ -9,16 +18,15 @@
   background: transparent;
 }
 
-.texto_principal {
+#contenedor {
   align-items: center;
-  width: 960px;
   margin-top: 5px;
   margin-right: auto;
   margin-bottom: 0px;
   margin-left: auto;
+  opacity: 0.8;
   background: transparent;
   color: white;
-  font-family: arial sans-serif;
 }
 
 .logo {
@@ -29,7 +37,7 @@
 }
 
 body {
-  background-image: url("imagenes/fondo_vino_index.jpg");
+  background-image: url("../imagenes/fondo_vino_index.jpg");
   background-repeat: round;
   background-attachment: fixed;
 }
@@ -45,15 +53,29 @@ footer {
   bottom: 0px;
 }
 
+h1 {
+  color: white;
+  font-weight: bold
+  font-family: verdana;
+  font-size: 28px;
+}
+
 .separador {
   height: 50px;
 }
 
 .texto_footer {
-  color: white;
+  color: khaki;
   text-align: center;
   margin-top: 20px;
   font-weight: bold;
   font-size: 12px;
   font-family: courier;
+}
+
+.texto_principal {
+  color: khaki;
+  font-weight: bold;
+  font-family: arial sans-serif;
+  font-size: 16px;
 }

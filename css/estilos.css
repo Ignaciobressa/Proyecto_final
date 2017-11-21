@@ -37,31 +37,31 @@
 }
 
 body {
-  background-image: url("imagenes/fondo_vino_index.jpg");
+  background-image: url("../imagenes/fondo_vino_index.jpg");
   background-repeat: round;
   background-attachment: fixed;
 }
 
 .texto_principal {
-  color: white;
+  color: khaki;
   font-weight: bold;
-  font-family: times serif;
+  font-family: arial sans-serif;
 }
 
 .texto_principal, h1 {
-  color: white;
+  color: khaki;
   font-weight: bolder;
-  font-family: serif;
-  font-size: 28px;
+  font-family: arial sans-serif;
+  font-size: 20px;
 }
 
 p {
-  color: white;
+  color: khaki;
   text-align: justify;
-  margin-top: 20px;
+  margin-top: 28px;
   font-weight: bold;
-  font-size: 18px;
-  font-family: arial;
+  font-size: 16px;
+  font-family: arial sans-serif;
 }
 
 /* Remove the navbar's default margin-bottom and rounded borders */
@@ -72,7 +72,7 @@ p {
 
 footer {
   background: black;
-  color: white;
+  color: khaki;
   padding-bottom: 3px;
   margin: auto 0px 0px 0px;
   position: fixed;
@@ -86,7 +86,7 @@ footer {
 }
 
 .texto_footer {
-  color: white;
+  color: khaki;
   text-align: center;
   margin-top: 20px;
   font-weight: bold;

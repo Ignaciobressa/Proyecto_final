@@ -4,7 +4,7 @@
   <title>Bodega Familia Cecchin en la Patagonia</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="contacto_a.css">
+  <link rel="stylesheet" href="css/contacto_a.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -22,15 +22,15 @@
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
-          <li><a href="admin.html"><span class="glyphicon glyphicon-text-background"></span> Admin</a></li>
-          <li><a href="index_a.html"><span class="glyphicon glyphicon-home"></span> Inicio</a></li>
-          <li><a href="quienes_somos_a.html"><span class="glyphicon glyphicon-eye-open"></span> Quiénes somos?</a></li>
-          <li><a href="nuestros_productos_a.html"><span class="glyphicon glyphicon-glass"></span> Nuestros Productos</a></li>
-          <li class="active"><a href="contacto_a.html"><span class="glyphicon glyphicon-envelope"></span> Contacto</a></li>
+          <li><a href="admin.php"><span class="glyphicon glyphicon-text-background"></span> Admin</a></li>
+          <li><a href="index_a.php"><span class="glyphicon glyphicon-home"></span> Inicio</a></li>
+          <li><a href="quienes_somos_a.php"><span class="glyphicon glyphicon-eye-open"></span> Quiénes somos?</a></li>
+          <li><a href="nuestros_productos_a.php"><span class="glyphicon glyphicon-glass"></span> Nuestros Productos</a></li>
+          <li class="active"><a href="contacto_a.php"><span class="glyphicon glyphicon-envelope"></span> Contacto</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-        <li><a href="registro_a.html"><span class="glyphicon glyphicon-user"></span> Registro</a></li>
-        <li><a href="ingresar_a.html"><span class="glyphicon glyphicon-log-in"></span> Ingresar</a></li>
+        <li><a href="registro_a.php"><span class="glyphicon glyphicon-user"></span> Registro</a></li>
+        <li><a href="ingresar_a.php"><span class="glyphicon glyphicon-log-in"></span> Ingresar</a></li>
       </ul>
       </div>
     </div>

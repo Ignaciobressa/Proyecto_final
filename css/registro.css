@@ -1,9 +1,10 @@
 @charset "ISO-8859-1";
 
 body {
-  background-image: url("imagenes/fondo_vino_index.jpg");
+  background-image: url("../imagenes/fondo_vino_index.jpg");
   background-repeat: round;
   background-attachment: fixed;
+
 }
 
 h1 {
@@ -26,25 +27,6 @@ p {
   color: white;
 }
 
-.navbar {
-  margin-bottom: 0;
-  border-radius: 0;
-}
-
-.logo {
-  margin-left: 95px;
-  opacity: 0.6;
-}
-
-.texto_footer {
-  color: white;
-  text-align: center;
-  margin-top: 20px;
-  font-weight: bold;
-  font-size: 12px;
-  font-family: courier;
-}
-
 footer {
   background: black;
   color: white;
@@ -55,17 +37,61 @@ footer {
   bottom: 0px;
 }
 
+.reg {
+  font-size: 10px;
+  height: 35px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+.logo {
+  margin-top: 0px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  opacity: 0.6;
+}
+
+.texto_footer {
+  color: khaki;
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 12px;
+  font-family: courier;
+}
+
+.separador {
+  height: 100px;
+}
+
+#promocion {
+  padding-left: 100px;
+  font-weight: 2px;
+}
 
 #contenedor {
+  border-radius: 5px;
   align-items: center;
-  width: 700px;
+  width: 960px;
   margin-top: 5px;
   margin-right: auto;
   margin-bottom: 10px;
   margin-left: auto;
   background-color: black;
+  padding-left: 5px;
+  padding-right: 5px;
   padding-top: 10px;
   padding-bottom: 10px;
   opacity: 0.9;
   color: white;
+}
+
+#show-hide-passwd {
+  cursor: pointer;
 }

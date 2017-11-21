@@ -4,62 +4,34 @@
   <title>Nuestros Productos</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="quienes_somos.css">
+  <link rel="stylesheet" href="css/quienes_somos.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li><a href="index.html"><span class="glyphicon glyphicon-home"></span> Inicio</a></li>
-        <li><a href="quienes_somos.html"><span class="glyphicon glyphicon-eye-open"></span> Quiénes somos?</a></li>
-        <li class="active"><a href="nuestros_productos.html"><span class="glyphicon glyphicon-glass"></span> Nuestros Productos</a></li>
-        <li><a href="contacto.html"><span class="glyphicon glyphicon-envelope"></span> Contacto</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-      <li><a href="registro.html"><span class="glyphicon glyphicon-user"></span> Registro</a></li>
-      <li><a href="ingresar.html"><span class="glyphicon glyphicon-log-in"></span> Ingresar</a></li>
-    </ul>
-    </div>
-  </div>
-</nav>
 
-<div id="encabezado">
-  <div class="logo">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-12">
-          <img src="imagenes/logo_vino.gif" height="150">
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<br>
+<?php
+  require 'include/menu.php'
+  ?>
+
+<?php
+  require 'include/logo.php'
+ ?>
 
   <div class="container">
     <div class="texto_principal">
-    <div class="row">
-      <div class="col-md-12">
-        <h1><u>Nuestros Productos</u></h1>
+      <div class="row">
+        <div class="col-md-12">
+          <h1>Nuestros Productos</h1>
+        </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12">
-        <h2><i>Familia Cecchin y Raices</i></h2>
+      <div class="row">
+        <div class="col-md-12">
+          <h2><em>Familia Cecchin y Raices</em></h2>
+        </div>
       </div>
-    </div>
-    <br>
+      <br>
       <div class="row">
         <div class="col-md-12">
             <p><em>Cosechamos  los frutos en el tiempo y espacio preciso,<br>
@@ -71,14 +43,14 @@
               Vinos, aceites y jugos de uva, son trabajados con la misma filosofía<br>
               que  desde hace más de 100 años, Santiago y María supieron transmitir<br>
               cultivando este modo de generar verdaderos productos orgánicos.</em></p>
-              <br>
-              <br>
-              <h2>Nuestros Varietales</h2>
-          </div>
+            <br>
+            <br>
+            <h2>Nuestros Varietales</h2>
         </div>
+      </div>
       <div class="row">
         <div class="col-md-6">
-          <h3>Vinos Tintos</h3>
+          <h3><em>Vinos Tintos</em></h3>
           <ul>
             <li>Blend</li>
             <li>Malbec Roble</li>
@@ -92,7 +64,7 @@
           </ul>
         </div>
         <div class="col-md-6">
-          <h3>Vinos Blancos</h3>
+          <h3><em>Vinos Blancos</em></h3>
           <ul>
             <li>Moscatel de Alejandría</li>
             <li>Pedro Gimenez - Chardonnay</li>
@@ -102,7 +74,7 @@
       </div>
       <div class="row">
         <div class="col-md-12">
-          <h4>Otros Productos</h4>
+          <h4><em>Otros Productos</em></h4>
           <ul>
             <li>Jugos de Uvas Naturales (sin alcohol)</li>
             <li>Aceite de Oliva</li>
@@ -116,14 +88,8 @@
 <div class="separador">
 </div>
 
-<footer class="container-fluid text-center">
-  <div class="panel_footer">
-    <div class="row">
-      <div class="col-md-12">
-        <p class="texto_footer"> Jorge Omar Lezano - Representante de la Bodega y Viñedos Familia Cecchín. Telefono: 0294-154519915. San Carlos de Bariloche, Río Negro, Argentina.</p>
-      </div>
-    </div>
-  </div>
-</footer>
+<?php
+  require 'include/footer.php'
+ ?>
 </body>
 </html>
