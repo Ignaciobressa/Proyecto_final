@@ -19,12 +19,18 @@
 
 <!--Menu Superior-->
 <?php
-  require 'include/menu.php'
+  require 'include/menu.php';
 ?>
 
 <!--Logo de la Empresa-->
 <?php
-  require 'include/logo.php'
+  require 'include/logo.php';
+  if(isset($_GET['alt'])){
+    if($_GET['alt'] == 1){
+      echo '<script lenguage="javascript">alert("Error al Ingresar!!!");</script>';
+    }
+  }
+
  ?>
 
 
