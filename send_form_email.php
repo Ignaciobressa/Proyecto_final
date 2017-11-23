@@ -1,3 +1,8 @@
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/contacto.css">
+</head>
+
 <?php
 
 $nombre = $_POST['nombre'];
@@ -18,14 +23,9 @@ $mensaje .= "Enviado el " . date('d/m/Y', time());
 $para = "relezcano369@gmail.com";
 $asunto = "Consulta sitio de Vinos";
 
-echo $header;
-echo "<br>";
-echo $mensaje;
-echo "<br>";
-
 mail($para, $asunto, utf8_decode($mensaje), $header);
 
-echo "<center><font face=Arial color=black>Su email fue enviado a nuestra casilla de correo... Muchas gracias por ponerse en contacto con nosotros</center>";
-echo "<center><a href=index.php>Volver a la pagina principal</a></center></font>";
+echo "<center><font face=Arial color=khaki>Su email fue enviado a nuestra casilla de correo... Muchas gracias por ponerse en contacto con nosotros</center>";
+echo '<center><p style="color: khaki">Para volver al Inicio <a href="index.php">Haga click aquí</a></p></center>';
 
 ?>

@@ -19,8 +19,8 @@
   require 'include/logo.php'
  ?>
 
-<div id ="contenedor_grande">
-  <div class="container-fluid">
+<div id="contenedor_grande">
+  <div class="container">
     <div clas="row">
       <div class="col-md-12">
         <h1>¿Quienes Somos?</h1>
@@ -29,7 +29,7 @@
     <br>
     <div clas="row">
       <div class="col-md-12">
-        <h2><i>Historia</i></h2>
+        <h2><i>Nuestra Historia</i></h2>
       </div>
     </div>
     <br>
@@ -37,7 +37,7 @@
       <div class="row">
         <div class="col-md-12">
           <div class="texto_principal">
-            <p>Cargando sólo sus sueños y una aventura por descubrir, <br>
+            <p><em>Cargando sólo sus sueños y una aventura por descubrir, <br>
               Santiago Cecchin y María pisan suelo argentino allá<br>
               por 1910, dejando atrás su tierra natal. Con claridad<br>
               transmitieron su amor por la madre tierra, a quien se<br>
@@ -48,12 +48,13 @@
               “la madre de todos los frutos”. Hoy, Alberto Cecchin consolida<br>
               más de 100 años de productos artesanales libres de agregados químicos<br>
               y nos invita a soñar un lugar mejor, a vivir el paisaje, a disfrutar<br>
-            esta casa, a apasionarse por el mundo orgánico, un mundo… para todos.</p>
+              esta casa, a apasionarse por el mundo orgánico, un mundo… para todos.</em></p>
           </div>
         </div>
       </div>
     </div>
   </div>
+</div>
   <br>
 
   <div class="separador">

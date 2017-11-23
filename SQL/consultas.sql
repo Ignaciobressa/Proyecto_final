@@ -1,5 +1,5 @@
--- AGREGAR REGISTRO DE USUARIO 
-INSERT INTO Users (name,lastName, phone, password, email, admin, prom) VALUES ('Facundo', 'Sautú', 2944824075, 'admin', 'facundo.sautu@gmail.com', 1, 0); 
+-- AGREGAR REGISTRO DE USUARIO
+insert into Users (name,lastName, phone, password, email, admin, prom)values ('Facundo', 'Sautú', 2944824075, 'admin', 'facundo.sautu@gmail.com', 1, 0);
 
 -- BORRAR USUARIO
 
@@ -13,12 +13,10 @@ select password, email from Users where email="relezcano369@gmail.com" and passw
 -- Alterar tabla
 alter table Users add column (prom boolean);
 
-delete from Users where id=4; 
+delete from Users where id=4;
 
 -- Consulta general
 
-select id from tabAct where Col = Val; 
+select id from tabAct where Col = Val;
 
-select * from Users;
-
-
+select * from 

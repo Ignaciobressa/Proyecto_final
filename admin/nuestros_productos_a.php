@@ -1,4 +1,3 @@
-<<<<<<< HEAD:admin/nuestros_productos_a.php
 <!DOCTYPE html>
 
 <?php
@@ -8,9 +7,6 @@
   $query = "se";
  ?>
 
-=======
-x<!DOCTYPE html>
->>>>>>> a0322e6ed78231710776962a79f2a7e27ece8338:admin/nuestros_productos_a.php
 <html lang="el">
 <head>
   <title>Bodega Familia Cecchin en la Patagonia</title>

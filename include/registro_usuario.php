@@ -1,3 +1,8 @@
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../css/ingresar.css">
+</head>
+
 <?php
 session_start();
 
@@ -38,15 +43,15 @@ if(isset($_POST['registrar'])) {
           $sql = "INSERT INTO Users (name, lastName, phone, password, email, admin, prom) VALUES ('$form_name', '$form_last', '$form_phone', '$form_pass', '$form_email', '$form_admin', '$form_prom')";//Se insertan los datos a la base de datos y el usuario ya fue registrado con exito.
           mysqli_query($link, $sql);
 
-          echo $sql;
-
-          echo 'Usted se ha registrado correctamente.<br>';
-          echo 'Para volver al inicio <a href="../index.php">Haga click aquí</a>';
+          echo '<script lenguage="javascript">alert("Usted se ha registrado exitosamente!!!");</script>';
+          echo '<center><p style="color: khaki">Para volver al inicio <a href="../index.php">Haga click aquí</a></p></center>';
         }else {
-          echo 'Las claves no son iguales, intente nuevamente.';
+          echo '<script lenguage="javascript">alert("Las claves no son iguales.. Pruebe escribir la misma clave en el campo de contraseña y de comprobación de contraseña");</script>';
+          echo '<center><p style="color: khaki">Para volver a intentarlo <a href="../registro.php">Haga click aquí</a></p></center>';
         }
       }else {
-        echo 'Este usuario ya ha sido registrado anteriormente.';
+        echo '<script lenguage="javascript">alert("Este usuario ha sido registrado anteriormente");</script>';
+        echo '<center><p style="color: khaki">Para volver a intentarlo <a href="../registro.php">Haga click aquí</a></p></center>';
       }
     }
   }
