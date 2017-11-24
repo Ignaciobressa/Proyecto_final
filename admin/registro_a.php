@@ -1,11 +1,11 @@
-php<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="el">
 <head>
   <title>Registrarse</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" href="css/registro_a.css">
+  <link rel="stylesheet" href="../css/registro_a.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -17,30 +17,9 @@ php<!DOCTYPE html>
 
   <!--Menu Superior-->
 
-  <nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-      </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav">
-          <li><a href="admin.php"><span class="glyphicon glyphicon-text-background"></span> Admin</a></li>
-          <li><a href="index_a.php"><span class="glyphicon glyphicon-home"></span> Inicio</a></li>
-          <li><a href="quienes_somos_a.php"><span class="glyphicon glyphicon-eye-open"></span> Quiénes somos?</a></li>
-          <li><a href="nuestros_productos_a.php"><span class="glyphicon glyphicon-glass"></span> Nuestros Productos</a></li>
-          <li><a href="contacto_a.php"><span class="glyphicon glyphicon-envelope"></span> Contacto</a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-        <li class="active"><a href="registro_a.php"><span class="glyphicon glyphicon-user"></span> Registro</a></li>
-        <li><a href="ingresar_a.php"><span class="glyphicon glyphicon-log-in"></span> Ingresar</a></li>
-      </ul>
-      </div>
-    </div>
-  </nav>
+  <?php
+    require "../include/menu_back.php";
+  ?>
 
   <!--Logo de la Empresa-->
 
@@ -146,11 +125,13 @@ php<!DOCTYPE html>
     </div>
   </form>
 
-  <br>  <!--Pie de pagina-->
+  <br>
 
-  <footer class="container-fluid text-center">
-    <p class="texto_footer">Jorge O. Lezcano - Vendedor oficial de la patagonia. Telefono: 0294-154519915. San Carlos de Bariloche, Río Negro, Argentina.</p>
-  </footer>
+  <!--Footer del Back End-->
+
+  <?php
+    require "../include/footer_back.php";
+  ?>
 
 </body>
 </html>

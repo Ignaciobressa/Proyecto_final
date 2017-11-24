@@ -4,7 +4,7 @@
   <title>Bienvenido admin!</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/admin.css">
+  <link rel="stylesheet" href="../css/admin.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -13,30 +13,9 @@
 
     <!--Menu Superior-->
 
-  <nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-      </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="admin.php"><span class="glyphicon glyphicon-text-background"></span> Admin</a></li>
-          <li><a href="index_a.php"><span class="glyphicon glyphicon-home"></span> Inicio</a></li>
-          <li><a href="quienes_somos_a.php"><span class="glyphicon glyphicon-eye-open"></span> Quiénes somos?</a></li>
-          <li><a href="nuestros_productos_a.php"><span class="glyphicon glyphicon-glass"></span> Nuestros Productos</a></li>
-          <li><a href="contacto_a.php"><span class="glyphicon glyphicon-envelope"></span> Contacto</a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-        <li><a href="registro_a.php"><span class="glyphicon glyphicon-user"></span> Registro</a></li>
-        <li><a href="ingresar_a.php"><span class="glyphicon glyphicon-log-in"></span> Ingresar</a></li>
-      </ul>
-      </div>
-    </div>
-  </nav>
+  <?php
+    require "../include/menu_back.php";
+  ?>
 
     <!--Modificar logo empresa-->
 
@@ -45,7 +24,7 @@
       <img src="../imagenes/logo_vino.gif" high="150px" width="150px">
     </div>
     <div id="subir_logo">
-      <input type="file" value="Seleccione la imagen para su logo">
+      <input type="file" value="Seleccione la imagen para su logo" name="logo">
     </div>
   </div>
 
@@ -55,19 +34,23 @@
 
       <div class="row">
 
+        <!--Modificacion texto menu inicio-->
+
         <div class="col-md-5">
           <div class="input-group">
             <span class="input-group-addon" id="basic-addon1">
               <span class="glyphicon glyphicon-home">
               </span>
             </span>
-            <input type="text" class="form-control" aria-describedby="basic-addon1" value="Inicio">
+            <input type="text" class="form-control" aria-describedby="basic-addon1" value="Inicio" name="inicio">
           </div>
         </div>
 
       </div>
 
       <div class="row">
+
+        <!--Modificacion texto menu ¿Quienes Somos?-->
 
         <div class="col-md-5">
           <div class="input-group">
@@ -75,9 +58,11 @@
               <span class="glyphicon glyphicon-eye-open">
               </span>
             </span>
-            <input type="text" class="form-control" aria-describedby="basic-addon1" value="Quiénes somos?">
+            <input type="text" class="form-control" aria-describedby="basic-addon1" value="Quiénes somos?" name="quienesSomos">
           </div>
         </div>
+
+        <!--Modificacion texto menu Registro-->
 
         <div class="col-md-5">
           <div class="input-group">
@@ -85,13 +70,15 @@
               <span class="glyphicon glyphicon-user">
               </span>
             </span>
-            <input type="text" class="form-control" aria-describedby="basic-addon1" value="Registro">
+            <input type="text" class="form-control" aria-describedby="basic-addon1" value="Registro" name="registro">
           </div>
         </div>
 
       </div>
 
       <div class="row">
+
+        <!--Modificacion texto menu Nuestros Productos-->
 
         <div class="col-md-5">
           <div class="input-group">
@@ -99,9 +86,11 @@
               <span class="glyphicon glyphicon-glass">
               </span>
             </span>
-            <input type="text" class="form-control" aria-describedby="basic-addon1" value="Nuestros Productos">
+            <input type="text" class="form-control" aria-describedby="basic-addon1" value="Nuestros Productos" name="nuestrosP">
           </div>
         </div>
+
+        <!--Modificacion texto menu Ingresar-->
 
         <div class="col-md-5">
           <div class="input-group">
@@ -109,7 +98,7 @@
               <span class="glyphicon glyphicon-log-in">
               </span>
             </span>
-            <input type="text" class="form-control" aria-describedby="basic-addon1" value="Ingresar">
+            <input type="text" class="form-control" aria-describedby="basic-addon1" value="Ingresar" name="ingresar">
           </div>
         </div>
 
@@ -117,13 +106,15 @@
 
       <div class="row">
 
+        <!--Modificacion texto menu Contacto-->
+
         <div class="col-md-5">
           <div class="input-group">
             <span class="input-group-addon" id="basic-addon1">
               <span class="glyphicon glyphicon-envelope">
               </span>
             </span>
-            <input type="text" class="form-control" aria-describedby="basic-addon1" value="Contacto">
+            <input type="text" class="form-control" aria-describedby="basic-addon1" value="Contacto" name="contacto">
           </div>
         </div>
 
@@ -137,20 +128,18 @@
   <div id="contenedor_fondo">
 
       <div class="row">
+
         <div class="col-md-5">
           <img src="../imagenes/fondo_vino_index.jpg" height="300px" id="imagen_fondo">
         </div>
         <div class="col-md-5" id="subir_fondo">
           <p id="texto_fondo">Seleccionar imagen de fondo</p>
-          <input type="file" value="Subir imagen de fondo." style="color:black">
+          <input type="file" value="Subir imagen de fondo." style="color:black" name="imgFondo">
         </div>
+
       </div>
 
     </div>
-
-    <!--Modificador del Footer-->
-
-    <!--Modificar footer-->
 
     <!--Modificar footer-->
 
@@ -164,7 +153,7 @@
 
     <div class="row">
       <div class="col-md-10">
-        <input type="text" class="form-control" value="Jorge Omar Lezano - Representante de la Bodega y Viñedos Familia Cecchín. Telefono: 0294-154519915. San Carlos de Bariloche, Río Negro, Argentina." style="high:200px; width:945px">
+        <input type="text" class="form-control" value="Jorge Omar Lezano - Representante de la Bodega y Viñedos Familia Cecchín. Telefono: 0294-154519915. San Carlos de Bariloche, Río Negro, Argentina." style="high:200px; width:945px" name="footer">
         <br>
       </div>
     </div>
@@ -176,7 +165,7 @@
       <div class="col-md-7">
         <div class="input-group">
           <span class="input-group-addon" id="basic-addon1"><b>Facebook:</b></span>
-          <input type="text" class="form-control" aria-describedby="basic-addon1" placeholder="Ingrese el facebook que desea agregar al footer">
+          <input type="text" class="form-control" aria-describedby="basic-addon1" placeholder="Ingrese el facebook que desea agregar al footer" name="face">
         </div>
       </div>
 
@@ -193,6 +182,12 @@
       </div>
     </div>
   </div>
+
+  <!--Footer del Back End-->
+
+  <?php
+    require "../include/footer_back.php";
+  ?>
 
 </body>
 </html>

@@ -13,10 +13,12 @@
 
 <?php
   require 'include/menu.php';
-  if($_GET['alt'] == 2){
-    echo '<script lenguage="javascript">alert("Ingreso Exitoso!!!");</script>';
-  } elseif($_GET['alt'] == 3){
-    echo '<script lenguage="javascript">alert("Usted se ha registrado exitosamente!!!");</script>';
+  if (isset($_GET['alt'])) {
+    if($_GET['alt'] == 2){
+      echo '<script lenguage="javascript">alert("Ingreso Exitoso!!!");</script>';
+    } elseif($_GET['alt'] == 3){
+      echo '<script lenguage="javascript">alert("Usted se ha registrado exitosamente!!!");</script>';
+    }
   }
  ?>
 
