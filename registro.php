@@ -24,7 +24,7 @@
     if ($_GET['alt'] == 4) {
       echo '<script lenguage="javascript">alert("Las claves no son iguales.. Pruebe escribir la misma clave en el campo de contraseña y de comprobación de contraseña");</script>';
     } elseif ($_GET['alt'] == 5) {
-      echo '<script lenguage="javascript">alert("Este usuario ha sido registrado anteriormente");</script>';
+      echo '<script lenguage="javascript">alert("Esta cuenta de Email ya ha sido utilizada");</script>';
     }
   }
 

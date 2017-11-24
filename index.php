@@ -13,13 +13,16 @@
 
 <?php
   require 'include/menu.php';
-  if (isset($_GET['alt'])) {
+  if(isset($_GET['alt'])){
     if($_GET['alt'] == 2){
       echo '<script lenguage="javascript">alert("Ingreso Exitoso!!!");</script>';
     } elseif($_GET['alt'] == 3){
       echo '<script lenguage="javascript">alert("Usted se ha registrado exitosamente!!!");</script>';
+    } elseif($_GET['alt'] == 6){
+      echo '<script lenguage="javascript">alert("Sesión cerrada exitosamente!!!");</script>';
     }
   }
+
  ?>
 
 <!-- Logo -->

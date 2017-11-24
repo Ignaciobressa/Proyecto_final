@@ -12,11 +12,11 @@
 <body>
 
 <?php
-  require 'include/menu.php'
+  require 'include/menu.php';
   ?>
 
 <?php
-  require 'include/logo.php'
+  require 'include/logo.php';
  ?>
 
   <div class="container">

@@ -27,7 +27,7 @@
   require 'include/logo.php';
   if(isset($_GET['alt'])){
     if($_GET['alt'] == 1){
-      echo '<script lenguage="javascript">alert("Error al Ingresar!!!");</script>';
+      echo '<script lenguage="javascript">alert("Este usuario no existe.. Intentelo nuevamente!!");</script>';
     }
   }
 

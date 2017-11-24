@@ -1,8 +1,8 @@
 <?php
 session_start();
-unset($_SESSION['nombre']);
+unset($_SESSION['login']);
+unset($_SESSION['email']);
+unset($_SESSION['name']);
+
+header('Location: ../index.php?alt=6');
  ?>
- Has cerrado la sesion.
-<br>
-<br>
- <a href="inicio.php">VOLVER</a>

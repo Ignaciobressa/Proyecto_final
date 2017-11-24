@@ -16,55 +16,26 @@
   <?php
     require "../include/menu_back.php";
   ?>
-
-<div id="encabezado">
-  <div class="logo">
-    <div class="container-fluid">
+  <div class="container">
+    <div id="contenedor">
       <div class="row">
         <div class="col-md-12">
-          <img src="../imagenes/logo_vino.gif" height="150">
+          <h1> Modificar contacto.php </h1>
+          <form name="contacto" method="POST" action="send_form_email.php">
+            <label>Titulo</label><br>
+            <input type="text" name="tituloCon" value="Contacto">
+            <br>
+            <br>
+            <label>Subtitulo</label><br>
+            <input type="text" name="subtituloCon" value="Escriba sus datos y dejenos su consulta.En la brevedad nos comunicaremos con usted!!">
+            <br>
+            <br>
+            
+          </form>
         </div>
       </div>
     </div>
-  </div>
-</div>
+    </div>
 
-<form action="/action_page.php">
-  <div class="contacto">
-    <div class="container">
-      <div class= "row" >
-        <div class="title">
-          <div class= "col-md-3"></div>
-          <div class= "col-md-3"></div>
-          <div class= "col-md-3"><h1> Contacto </h1></div>
-          <div class= "col-md-3"></div>
-        </div>
-      </div>
-    <br>
-    <br>
-    <div class="row">
-      <div class="col-md-6"> <label> Deje aqui su comentario </label> </div>
-      <div class="col-md-6">  <input type="text" name="fname" placeholder="Nombre"> </div>
-    </div>
-    <div clas="row">
-      <div class="col-md-6">  <textarea style="width: 500px; height: 150px"></textarea> </div>
-      <div class="col-md-6">  <input type="text" name="fname" placeholder="Apellido"> </div>
-    </div>
-    <div clas="row">
-      <div class="col-md-6"> </div>
-      <div class="col-md-6">  <input type="mail" name="fname" placeholder="Direccion de email"> </div>
-    </div>
-    <div clas="row">
-      <div class="col-md-6"> </div>
-      <div class="col-md-6">  <input type="text" name="fname" placeholder="Telefono"> </div>
-    </div>
- </form>
- <div class="row">
-  <div class="col-md-5"> <input type="submit" value="Guardar"> </div>
-  <div class="col-md-1"> </div>
-  <div class="col-md-5"> <input type="reset" value="Limpiar"> </div>
-  <div class="col-md-1"> </div>
- </div>
- </div>
 </body>
 </html>
