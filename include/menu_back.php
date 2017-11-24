@@ -24,7 +24,7 @@
 
             <li
               <?php
-              if (basename($_SERVER["SCRIPT_FILENAME"], '.php')=="qioenes_somos_a") {
+              if (basename($_SERVER["SCRIPT_FILENAME"], '.php')=="quienes_somos_a") {
                 echo "class='active'";
               }?>><a href="quienes_somos_a.php"><span class="glyphicon glyphicon-eye-open"></span> Quiénes somos?</a></li>
 

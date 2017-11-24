@@ -15,7 +15,7 @@
   $footer = $_POST['footer'];
   $face = $_POST['face'];
 
-  $query_admin = "UPDATE beadmin SET logo = $logo, inicio = $inicio, quienesSomos = $quienesSomos, nuestrosP = $nuestrosP, contacto = $contacto, registro = $registro, ingresar = $ingresar, imgFondo = $imgFondo, footer = $footer, face = $face WHERE id = 1;";
+  $query_admin = "UPDATE BEadmin SET logo = $logo, inicio = $inicio, quienesSomos = $quienesSomos, nuestrosP = $nuestrosP, contacto = $contacto, registro = $registro, ingresar = $ingresar, imgFondo = $imgFondo, footer = $footer, face = $face WHERE id = 1;";
 
   mysqli_query($link, $query_admin);
 
@@ -31,7 +31,7 @@
   $subtituloQS = $_POST['subtitulo'];
   $txtPrincipal = $_POST['txtPrincipal'];
 
-  $query_quieness = "UPDATE bequieness SET titulo = $tituloQS, subtitulo = $subtituloQS, txtPrincipal = $txtPrincipal WHERE id = 1;";
+  $query_quieness = "UPDATE BEQuienesS SET titulo = $tituloQS, subtitulo = $subtituloQS, txtPrincipal = $txtPrincipal WHERE id = 1;";
 
   mysqli_query($link, $query_quieness);
 
@@ -44,7 +44,7 @@
   $txtExp = $_POST['txtExp'];
   $titVar = $_POST['titVar'];
 
-  $query_nuestrosp = "UPDATE benuestrosp SET titulo = $tituloNP, subtitulo = $subtituloNP, txtExp = $txtExp, titVar = $titVar WHERE id = 1;";
+  $query_nuestrosp = "UPDATE BENuestrosP SET titulo = $tituloNP, subtitulo = $subtituloNP, txtExp = $txtExp, titVar = $titVar WHERE id = 1;";
 
   mysqli_query($link, $query_nuestrosp);
 

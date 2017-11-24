@@ -47,7 +47,7 @@ require 'conexion.php';
         <li
         <?php
         if (isset($_SESSION['login'])){
-          ?>><span style="color: white; font-size: 12px; font-weight: bold" class="glyphicon glyphicon-user"><em> Hola | <?echo $_SESSION['email'];?></em></span> </li>
+          ?>><span style="color: white; font-size: 18px; font-weight: bold"><em>Hola, <?echo $_SESSION['name'];?> </em></span><span style="color: white; font-size: 12px; font-weight: bold" class="glyphicon glyphicon-user"></span> </li>
           <?
         } else{
           ?>

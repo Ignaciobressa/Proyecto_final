@@ -11,12 +11,12 @@
 </head>
 <body>
 
-<?php
-  require 'include/menu.php'
+<?
+  require 'include/menu.php';
  ?>
 
 <?php
-  require 'include/logo.php'
+  require 'include/logo.php';
  ?>
 
 <div class="container">
@@ -27,12 +27,22 @@
       <br>
       <form name="contacto" method="POST" action="send_form_email.php">
         <tr>
-          <td><div style="color: white; font-family: arial sans-serif; font-size: 12px"> <strong>NOMBRE: </font> </strong></div></td>
-          <td><input type="text" name="nombre" size="30" maxlength="50"> <br></td>
+          <? if(isset($_SESSION['login'])){
+            ?><td><div style="color: white; font-family: arial sans-serif; font-size: 12px"> <strong>NOMBRE: </font> </strong></div>
+              <td><input  type="text" name="mail" size="30" maxlength="50" value="<?echo $_SESSION['name'];?>"> <br></td><?
+          } else{
+            ?><td><div style="color: white; font-family: arial sans-serif; font-size: 12px"> <strong>NOMBRE: </font> </strong></div>
+            <td><input  type="text" name="mail" size="30" maxlength="50"> <br></td><?
+          }?>
         </tr>
         <tr>
-          <td><div style="color: white; font-family: arial sans-serif; font-size: 12px"> <strong>E-MAIL: </font> </strong></div>
-          <td><input  type="text" name="mail" size="30" maxlength="50"> <br></td>
+          <? if(isset($_SESSION['login'])){
+            ?><td><div style="color: white; font-family: arial sans-serif; font-size: 12px"> <strong>E-MAIL: </font> </strong></div>
+              <td><input  type="text" name="mail" size="30" maxlength="50" value="<?echo $_SESSION['email'];?>"> <br></td><?
+          } else{
+            ?><td><div style="color: white; font-family: arial sans-serif; font-size: 12px"> <strong>E-MAIL: </font> </strong></div>
+            <td><input  type="text" name="mail" size="30" maxlength="50"> <br></td><?
+          }?>
         </tr>
         <tr>
           <td><div style="color: white; font-family: arial sans-serif; font-size: 12px"> <strong>TELÉFONO: </font> </strong></div>
@@ -43,7 +53,7 @@
           <td><input type="text" name="empresa" size="30" maxlength="50"> <br><br></td>
         </tr>
         <tr>
-          <td colspan="2"><div><font face="Arial" size="2" color="white"> <strong> MENSAJE: </font> </strong></div>
+          <td colspan="2"><div style="color: white; font-family: arial sans-serif; font-size: 12px"> <strong> MENSAJE: </font> </strong></div>
           <textarea name="mensaje" cols="40" rows="5" ></textarea><br>
           <input type="reset" name="Reset" value="BORRAR TODO"/> <input type="submit" name="Submit" value="ENVIAR"/>
           <br>
