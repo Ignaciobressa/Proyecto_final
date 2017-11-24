@@ -1,3 +1,10 @@
+<?
+session_start();
+
+require 'conexion.php';
+
+?>
+
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -37,18 +44,26 @@
       </ul>
 
       <ul class="nav navbar-nav navbar-right">
+        <li
+        <?php
+        if (isset($_SESSION['login'])){
+          ?>><span style="color: white; font-size: 12px; font-weight: bold" class="glyphicon glyphicon-user"><em> Hola | <?echo $_SESSION['email'];?></em></span> </li>
+          <?
+        } else{
+          ?>
+          <li
+          <?php
+          if (basename($_SERVER["SCRIPT_FILENAME"], '.php')=="registro") {
+            echo "class='active'";
+          }?>><a href="registro.php"><span class="glyphicon glyphicon-user"></span> Registro</a></li>
 
-      <li
-      <?php
-      if (basename($_SERVER["SCRIPT_FILENAME"], '.php')=="registro") {
-        echo "class='active'";
-      }?>><a href="registro.php"><span class="glyphicon glyphicon-user"></span> Registro</a></li>
+          <li
+          <?php
+          if (basename($_SERVER["SCRIPT_FILENAME"], '.php')=="ingresar") {
+            echo "class='active'";
+          }?>><a href="ingresar.php"><span class="glyphicon glyphicon-log-in"></span> Ingresar</a></li><?
+        }?>
 
-      <li
-      <?php
-      if (basename($_SERVER["SCRIPT_FILENAME"], '.php')=="ingresar") {
-        echo "class='active'";
-      }?>><a href="ingresar.php"><span class="glyphicon glyphicon-log-in"></span> Ingresar</a></li>
 
     </ul>
 

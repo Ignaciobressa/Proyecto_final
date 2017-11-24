@@ -1,21 +1,17 @@
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="../css/ingresar.css">
-</head>
-
 <?php
-
-$usuario = $_POST['email'];
-$pass = $_POST['pass'];
+session_start();
+$email = $_POST['email'];
+$password = $_POST['pass'];
 
 require 'conexion.php';
 
-$result = mysqli_query($link, "SELECT * FROM Users WHERE email= '". $_POST['email'] ."'");
+$result = mysqli_query($link, "SELECT * FROM Users WHERE email= '$email'");
 
 if($row = mysqli_fetch_array($result)){
-  if($row['password'] == $pass){
-    session_start();
-    $_SESSION['email'] = $usuario;
+  if($row['password'] == $password){
+    $_SESSION['login'] = true;
+    $_SESSION['name'] = $result->name;
+    $_SESSION['email'] = $email;
     header('Location: ../index.php?alt=2');
   } else{
     header('Location: ../ingresar.php?alt=1');
