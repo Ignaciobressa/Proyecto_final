@@ -12,11 +12,38 @@
 <body>
 
 <?php
+  require 'include/conexion.php';
   require 'include/menu.php';
-  ?>
-
-<?php
   require 'include/logo.php';
+
+  $blend = mysqli_query($link, "SELECT name FROM Product WHERE id=1");
+  $result = $blend->fetch_array(MYSQLI_ASSOC);
+  $malbecR = mysqli_query($link, "SELECT name FROM Product WHERE id=2");
+  $result1 = $malbecR->fetch_array(MYSQLI_ASSOC);
+  $malbecN = mysqli_query($link, "SELECT name FROM Product WHERE id=3");
+  $result2 = $malbecN->fetch_array(MYSQLI_ASSOC);
+  $malbec = mysqli_query($link, "SELECT name FROM Product WHERE id=4");
+  $result3 = $malbec->fetch_array(MYSQLI_ASSOC);
+  $graciana = mysqli_query($link, "SELECT name FROM Product WHERE id=5");
+  $result4 = $graciana->fetch_array(MYSQLI_ASSOC);
+  $carignan = mysqli_query($link, "SELECT name FROM Product WHERE id=6");
+  $result5 = $carignan->fetch_array(MYSQLI_ASSOC);
+  $cabernet = mysqli_query($link, "SELECT name FROM Product WHERE id=7");
+  $result6 = $cabernet->fetch_array(MYSQLI_ASSOC);
+  $syrah = mysqli_query($link, "SELECT name FROM Product WHERE id=8");
+  $result7 = $syrah->fetch_array(MYSQLI_ASSOC);
+  $merlot = mysqli_query($link, "SELECT name FROM Product WHERE id=9");
+  $result8 = $merlot->fetch_array(MYSQLI_ASSOC);
+  $moscatel = mysqli_query($link, "SELECT name FROM Product WHERE id=10");
+  $result9 = $moscatel->fetch_array(MYSQLI_ASSOC);
+  $pedro = mysqli_query($link, "SELECT name FROM Product WHERE id=11");
+  $result10 = $pedro->fetch_array(MYSQLI_ASSOC);
+  $rose = mysqli_query($link, "SELECT name FROM Product WHERE id=12");
+  $result11 = $rose->fetch_array(MYSQLI_ASSOC);
+  $jugo = mysqli_query($link, "SELECT name FROM Product WHERE id=13");
+  $result12 = $jugo->fetch_array(MYSQLI_ASSOC);
+  $aceite = mysqli_query($link, "SELECT name FROM Product WHERE id=1");
+  $result13 = $aceite->fetch_array(MYSQLI_ASSOC);
  ?>
 
   <div class="container">
@@ -52,23 +79,24 @@
         <div class="col-md-6">
           <h3><em>Vinos Tintos</em></h3>
           <ul>
-            <li>Blend</li>
-            <li>Malbec Roble</li>
-            <li>Malbec Natural sin sulfitos agregados</li>
-            <li>Malbec</li>
-            <li>Graciana (cepa única en el país)</li>
-            <li>Carignan (cepa única en el país)</li>
-            <li>Cabernet Sauvignon</li>
-            <li>Syrah</li>
-            <li>Merlot</li>
+            <li><?echo $result['name'];?>
+            </li>
+            <li><?echo $result1['name'];?></li>
+            <li><?echo $result2['name'];?></li>
+            <li><?echo $result3['name'];?></li>
+            <li><?echo $result4['name'];?></li>
+            <li><?echo $result5['name'];?></li>
+            <li><?echo $result6['name'];?></li>
+            <li><?echo $result7['name'];?></li>
+            <li><?echo $result8['name'];?></li>
           </ul>
         </div>
         <div class="col-md-6">
           <h3><em>Vinos Blancos</em></h3>
           <ul>
-            <li>Moscatel de Alejandría</li>
-            <li>Pedro Gimenez - Chardonnay</li>
-            <li>Rosé Malbec</li>
+            <li><?echo $result9['name'];?></li>
+            <li><?echo $result10['name'];?></li>
+            <li><?echo $result11['name'];?></li>
           </ul>
         </div>
       </div>
@@ -76,8 +104,8 @@
         <div class="col-md-12">
           <h4><em>Otros Productos</em></h4>
           <ul>
-            <li>Jugos de Uvas Naturales (sin alcohol)</li>
-            <li>Aceite de Oliva</li>
+            <li><?echo $result12['name'];?></li>
+            <li><?echo $result13['name'];?></li>
           </ul>
         </div>
       </div>
