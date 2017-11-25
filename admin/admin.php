@@ -18,15 +18,17 @@
   ?>
 
     <!--Modificar logo empresa-->
-
-  <div class="row">
-    <div class="logo">
-      <img src="../imagenes/logo_vino.gif" high="150px" width="150px">
+  <form name="imgLogo" method="post" action="../include/form_imagenes.php">
+    <div class="row">
+      <div class="logo">
+        <img src="../imagenes/logo_vino.gif" high="150px" width="150px">
+      </div>
+      <div id="subir_logo">
+        <input type="file" value="Seleccione la imagen para su logo" name="logo">
+      </div>
+      <button type="submit" name="button">Enviar</button>
     </div>
-    <div id="subir_logo">
-      <input type="file" value="Seleccione la imagen para su logo" name="logo">
-    </div>
-  </div>
+  </form>
 
     <!--Modificacion del menu Superior-->
 
@@ -182,7 +184,8 @@
       </div>
     </div>
   </div>
-
+  <br>
+  <br>
   <!--Footer del Back End-->
 
   <?php
