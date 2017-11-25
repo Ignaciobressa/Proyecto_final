@@ -42,7 +42,7 @@
   $result11 = $rose->fetch_array(MYSQLI_ASSOC);
   $jugo = mysqli_query($link, "SELECT name FROM Product WHERE id=13");
   $result12 = $jugo->fetch_array(MYSQLI_ASSOC);
-  $aceite = mysqli_query($link, "SELECT name FROM Product WHERE id=1");
+  $aceite = mysqli_query($link, "SELECT name FROM Product WHERE id=14");
   $result13 = $aceite->fetch_array(MYSQLI_ASSOC);
  ?>
 
