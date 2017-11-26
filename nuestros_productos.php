@@ -26,12 +26,6 @@
   $data_queryNuestrosP = mysqli_query($link, "SELECT * FROM BENuestrosP WHERE id = 1;");
   $data_BENuestrosP = $data_queryNuestrosP->fetch_array(MYSQLI_ASSOC);
 
-
-
-  /*
-  while ($data_categorias = $categorias->fetch_array(MYSQLI_ASSOC)) {
-    printf("ID: %s  Nombre: %s", $data_categorias["id"], $data_categorias["name"]);
-  }
   /*
   $blend = mysqli_query($link, "SELECT name FROM Product WHERE id=1");
   $result = $blend->fetch_array(MYSQLI_ASSOC);
@@ -93,10 +87,10 @@
 
       <div class="row">
 
+        <div class="col-md-6">
         <?php
 
         $categorias = mysqli_query($link, "SELECT * FROM Category;");
-        $filasCat = mysqli_num_rows($categorias);
         //$data_categorias = $categorias->fetch_array(MYSQLI_ASSOC);
 
         $productos = mysqli_query($link, "SELECT * FROM Product;");
@@ -105,8 +99,7 @@
 
 
         while($data_categorias = $categorias->fetch_array(MYSQLI_ASSOC)) {
-        ?>  <div class="col-md-6">
-            <h3><em><?php echo $data_categorias['name']; ?></em></h3>
+        ?>  <h3><em><?php echo $data_categorias['name']; ?></em></h3>
             <ul>
             <?php
             while($data_productos = $productos->fetch_array(MYSQLI_ASSOC)){
@@ -115,9 +108,10 @@
             <?php
               }
             }?>
-            </ul>
-          </div><?php
+            </ul><?php
         }?>
+
+        </div>
 
 
         <?php /*
