@@ -34,6 +34,8 @@
   if(isset($_GET['alt'])){
     if($_GET['alt'] == 1){
       echo '<script lenguage="javascript">alert("Este usuario no existe.. Intentelo nuevamente!!");</script>';
+    } elseif($_GET['alt'] == 2){
+      echo '<script lenguage="javascript">alert("Contraseña errone.. intente nuevamente!!");</script>';
     }
   }
 

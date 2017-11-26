@@ -17,7 +17,7 @@
   ?>
 
 </head>
-<body background="../imagenes/<?php echo $data_BEadmin['imgFondo']; ?>" style="background-repeat: round; background-attachment: fixed;">
+<body background="imagenes/<?php echo $data_BEadmin['imgFondo']; ?>" style="background-repeat: round; background-attachment: fixed;">
 
 
 <?php

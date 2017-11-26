@@ -13,6 +13,10 @@ if($data_user['email'] == $emailAdmin){
   if($data_user['password'] == $passAdmin){
     if($data_user['admin'] == 1){
       //Ingreso exitoso
+      $_SESSION['login'] = true;
+      $_SESSION['email'] = $email;
+      $_SESSION['phone'] = $data_user['phone'];
+      $_SESSION['name'] = $data_user['name'];
       $_SESSION['ingresoAdmin'] = true;
       header('Location: ../admin/admin.php');
     } else {

@@ -65,7 +65,7 @@
             if (basename($_SERVER["SCRIPT_FILENAME"], '.php')=="ingresar_a") {
               echo "class='active'";
             }?>><a href="ingresar_a.php"><span class="glyphicon glyphicon-log-in"></span> <?php echo $data_BEadmin['ingresar']; ?></a></li>
-
+          <li><a href="../index.php"><span class="glyphicon glyphicon-star"></span> FrontEnd</a></li>
           <li><a href="../include/logout.php"><span class="glyphicon glyphicon-off"></li>
     </ul>
     </div>
