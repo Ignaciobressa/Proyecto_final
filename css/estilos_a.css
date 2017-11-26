@@ -40,6 +40,14 @@ p {
   border-radius: 0;
 }
 
+.logo {
+  margin-top: 0px;
+  margin-left: 20px;
+  margin-bottom: 30px;
+  opacity: 0.6;
+  float: left;
+}
+
 footer {
   background: black;
   color: white;

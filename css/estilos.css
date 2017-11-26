@@ -35,13 +35,12 @@
   margin-bottom: 30px;
   opacity: 0.6;
 }
-
+/*
 body {
-  background-image: url("../imagenes/fondo_vino_index.jpg");
   background-repeat: round;
   background-attachment: fixed;
 }
-
+*/
 .texto_principal, h1 {
   color: khaki;
   font-weight: bolder;

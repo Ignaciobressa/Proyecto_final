@@ -11,7 +11,7 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-12">
-          <img src="imagenes/<?echo $result['logo'];?>" height="150">
+          <img src="imagenes/<?php echo $result['logo'];?>" height="150">
         </div>
       </div>
     </div>

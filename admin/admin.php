@@ -11,6 +11,25 @@
 </head>
 <body>
 
+  <!--Conexion a Base de Datos-->
+
+  <?php
+
+    session_start();
+
+    require "../include/conexion.php";
+
+    if(!isset($_SESSION['ingresoAdmin'])){
+      //Session no iniciada
+      header('Location: admin_login.php?alt=4');
+    }
+
+
+    $data_queryAdmin = mysqli_query($link, "SELECT * FROM BEadmin WHERE id = 1;");
+    $data_BEadmin = $data_queryAdmin->fetch_array(MYSQLI_ASSOC);
+
+  ?>
+
     <!--Menu Superior-->
 
   <?php
@@ -18,21 +37,24 @@
   ?>
 
     <!--Modificar logo empresa-->
-  <form name="imgLogo" method="post" action="../include/form_imagenes.php">
-    <div class="row">
-      <div class="logo">
-        <img src="../imagenes/logo_vino.gif" high="150px" width="150px">
+  <form name="imgLogo" method="post" action="../include/upload_backend_mod.php">
+
+    <div id="contenedor">
+
+      <div class="row">
+        <div class="logo">
+          <img src="../imagenes/<?php echo $data_BEadmin['logo']; ?>" high="150px" width="150px">
+        </div>
+        <div id="subir_logo">
+          <input type="file" value="Seleccione la imagen para su logo" name="logo">
+        </div>
       </div>
-      <div id="subir_logo">
-        <input type="file" value="Seleccione la imagen para su logo" name="logo">
-      </div>
-      <button type="submit" name="button">Enviar</button>
+
     </div>
-  </form>
 
     <!--Modificacion del menu Superior-->
 
-  <div id="contenedor">
+    <div id="contenedor">
 
       <div class="row">
 
@@ -44,7 +66,7 @@
               <span class="glyphicon glyphicon-home">
               </span>
             </span>
-            <input type="text" class="form-control" aria-describedby="basic-addon1" value="Inicio" name="inicio">
+            <input type="text" class="form-control" aria-describedby="basic-addon1" value="<?php echo $data_BEadmin['inicio']; ?>" name="inicio">
           </div>
         </div>
 
@@ -60,7 +82,7 @@
               <span class="glyphicon glyphicon-eye-open">
               </span>
             </span>
-            <input type="text" class="form-control" aria-describedby="basic-addon1" value="Quiénes somos?" name="quienesSomos">
+            <input type="text" class="form-control" aria-describedby="basic-addon1" value="<?php echo $data_BEadmin['quienesSomos']; ?>" name="quienesSomos">
           </div>
         </div>
 
@@ -72,7 +94,7 @@
               <span class="glyphicon glyphicon-user">
               </span>
             </span>
-            <input type="text" class="form-control" aria-describedby="basic-addon1" value="Registro" name="registro">
+            <input type="text" class="form-control" aria-describedby="basic-addon1" value="<?php echo $data_BEadmin['registro']; ?>" name="registro">
           </div>
         </div>
 
@@ -88,7 +110,7 @@
               <span class="glyphicon glyphicon-glass">
               </span>
             </span>
-            <input type="text" class="form-control" aria-describedby="basic-addon1" value="Nuestros Productos" name="nuestrosP">
+            <input type="text" class="form-control" aria-describedby="basic-addon1" value="<?php echo $data_BEadmin['nuestrosP']; ?>" name="nuestrosP">
           </div>
         </div>
 
@@ -100,7 +122,7 @@
               <span class="glyphicon glyphicon-log-in">
               </span>
             </span>
-            <input type="text" class="form-control" aria-describedby="basic-addon1" value="Ingresar" name="ingresar">
+            <input type="text" class="form-control" aria-describedby="basic-addon1" value="<?php echo $data_BEadmin['ingresar']; ?>" name="ingresar">
           </div>
         </div>
 
@@ -116,27 +138,27 @@
               <span class="glyphicon glyphicon-envelope">
               </span>
             </span>
-            <input type="text" class="form-control" aria-describedby="basic-addon1" value="Contacto" name="contacto">
+            <input type="text" class="form-control" aria-describedby="basic-addon1" value="<?php echo $data_BEadmin['contacto']; ?>" name="contacto">
           </div>
         </div>
 
       </div>
     </div>
 
-  <br>
+    <br>
 
     <!--Modificar fondo de pagina-->
 
-  <div id="contenedor_fondo">
+    <div id="contenedor_fondo">
 
       <div class="row">
 
         <div class="col-md-5">
-          <img src="../imagenes/fondo_vino_index.jpg" height="300px" id="imagen_fondo">
+          <img src="../imagenes/<?php echo $data_BEadmin['imgFondo']; ?>" height="300px" id="imagen_fondo">
         </div>
         <div class="col-md-5" id="subir_fondo">
           <p id="texto_fondo">Seleccionar imagen de fondo</p>
-          <input type="file" value="Subir imagen de fondo." style="color:black" name="imgFondo">
+          <input type="file" style="color:black" name="imgFondo">
         </div>
 
       </div>
@@ -145,45 +167,49 @@
 
     <!--Modificar footer-->
 
-  <div id="contenedor">
+    <div id="contenedor">
 
-    <div class="row">
-      <div class="col-md-12">
-        <p id="texto_footer">Texto para el footer</p>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-10">
-        <input type="text" class="form-control" value="Jorge Omar Lezano - Representante de la Bodega y Viñedos Familia Cecchín. Telefono: 0294-154519915. San Carlos de Bariloche, Río Negro, Argentina." style="high:200px; width:945px" name="footer">
-        <br>
-      </div>
-    </div>
-
-    <div class="row">
-
-      <div class="col-md-3"></div>
-
-      <div class="col-md-7">
-        <div class="input-group">
-          <span class="input-group-addon" id="basic-addon1"><b>Facebook:</b></span>
-          <input type="text" class="form-control" aria-describedby="basic-addon1" placeholder="Ingrese el facebook que desea agregar al footer" name="face">
+      <div class="row">
+        <div class="col-md-12">
+          <p id="texto_footer">Texto para el footer</p>
         </div>
       </div>
 
-      <div class="col-md-2"></div>
+      <div class="row">
+        <div class="col-md-10">
+          <input type="text" class="form-control" value="<?php echo $data_BEadmin['footer']; ?>" style="high:200px; width:945px" name="footer">
+          <br>
+        </div>
+      </div>
+
+      <div class="row">
+
+        <div class="col-md-3"></div>
+
+        <!--Modificar Face-->
+
+        <div class="col-md-7">
+          <div class="input-group">
+            <span class="input-group-addon" id="basic-addon1"><b>Facebook:</b></span>
+            <input type="text" class="form-control" aria-describedby="basic-addon1" value="<?php echo $data_BEadmin['face']; ?>" name="face">
+          </div>
+        </div>
+
+        <div class="col-md-2"></div>
+      </div>
     </div>
-  </div>
 
     <!--Subir Modificaciones-->
 
-  <div id="contenedor">
-    <div class="row">
-      <div class="col-md-12 reg">
-        <button type="submit" class="btn btn-default " id="subir_cambios" name="SubCam">Subir Cambios</button>
+    <div id="contenedor">
+      <div class="row">
+        <div class="col-md-12 reg">
+          <input type="hidden" name="Pag" value="1">
+          <button type="submit" class="btn btn-default " id="subir_cambios" name="SubCam">Subir Cambios</button>
+        </div>
       </div>
     </div>
-  </div>
+  </form>
   <br>
   <br>
   <!--Footer del Back End-->

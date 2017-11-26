@@ -11,6 +11,24 @@
 </head>
 <body>
 
+  <!--Conexion con base de datos-->
+
+  <?php
+
+    session_start();
+
+    require "../include/conexion.php";
+    
+    if(!isset($_SESSION['ingresoAdmin'])){
+      //Session no iniciada
+      header('Location: admin_login.php?alt=4');
+    }
+
+    $data_queryInicio = mysqli_query($link, "SELECT * FROM BEinicio WHERE id = 1;");
+    $data_BEinicio = $data_queryInicio->fetch_array(MYSQLI_ASSOC);
+
+  ?>
+
   <!--Menu Superior-->
 
   <?php
@@ -20,11 +38,11 @@
   <div class="container">
     <div id="contenedor">
 
-      <h1>Modificar pagina index.html</h1>
+      <h1>Modificar pagina index.php</h1>
 
       <br>
 
-      <form class="modificar" action="index_a.html" method="post">
+      <form class="modificar" action="../include/upload_backend_mod.php" method="post">
 
         <div class="row">
 
@@ -32,17 +50,29 @@
 
           <div class="col-md-4">
             <label>Imagen 1 carousel</label>
-            <input type="file" name="imagen_1">
+            <div class="logo">
+              <img src="../imagenes/<?php echo $data_BEinicio['imgCar1']; ?>" high="150px" width="150px">
+            </div>
+            <br>
+            <input type="file" name="imgCar1">
           </div>
 
           <div class="col-md-4">
             <label>Imagen 2 carousel</label>
-            <input type="file" name="imagen_2">
+              <div class="logo">
+                <img src="../imagenes/<?php echo $data_BEinicio['imgCar2']; ?>" high="150px" width="150px">
+              </div>
+              <br>
+            <input type="file" name="imgCar2">
           </div>
 
           <div class="col-md-4">
             <label>Imagen 3 carousel</label>
-            <input type="file" name="Imagen 3">
+              <div class="logo">
+                <img src="../imagenes/<?php echo $data_BEinicio['imgCar3']; ?>" high="150px" width="150px">
+              </div>
+              <br>
+            <input type="file" name="imgCar3">
           </div>
 
         </div>
@@ -55,7 +85,7 @@
 
           <div class="col-md-12">
             <label>Texto imagen 1 carousel</label>
-            <input type="text" name="imagen_1" value="Para disfrutar en todo momento" style="width: 350px">
+            <input type="text" name="txtCar1" value="<?php echo $data_BEinicio['txtCar1']; ?>" style="width: 350px">
           </div>
 
         </div>
@@ -65,7 +95,7 @@
 
           <div class="col-md-12">
             <label>Texto imagen 2 carousel</label>
-            <input type="text" name="imagen_2" value="Una experiencia innolvidable" style="width: 350px">
+            <input type="text" name="txtCar2" value="<?php echo $data_BEinicio['txtCar2']; ?>" style="width: 350px">
           </div>
 
         </div>
@@ -75,9 +105,25 @@
 
           <div class="col-md-12">
             <label>Texto imagen 3 carousel</label>
-            <input type="text" name="Imagen 3" value="Gran selección de vinos en nuestra cava" style="width: 350px">
+            <input type="text" name="txtCar3" value="<?php echo $data_BEinicio['txtCar3']; ?>" style="width: 350px">
           </div>
 
+        </div>
+
+        <br>
+
+        <!--Modificar el titulo del texto principal-->
+
+        <div clas="row">
+          <div class="col-md-12">
+            <label>Titulo texto principal</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <input type="text" name="tituloTxtPrin" value="<?php echo $data_BEinicio['tituloTxtPrin']; ?>">
+          </div>
         </div>
 
         <br>
@@ -93,11 +139,7 @@
         <div class="row">
 
           <div class="col-md-12">
-            <textarea style="width: 1065px; height: 150px">Concebimos nuestro vino orgánico y natural con las vides que conviven rodeadas de hierbas y todo tipo de  frutales, bajo el estricto control de mantener el equilibrio ecológico, siendo la propia Naturaleza quien provee la protección de las enfermedades que podrían ocasionarse en
-nuestras plantaciones, gracias a lo cual no utilizamos ningún tipo de químicos sobre el suelo o las plantas que nos regalan sus frutos en estado natural, para
-lograr NUESTRO REAL VINO ORGÁNICO, cumpliendo todos los estándares que las normas internacionales
-exigen.  Siendo calificados con el título de AGRICULTORES ARTISTAS ARTESANOS, lo que nos acredita y permite llevar un verdadero VINO ORGÁNICO desde nuestras viñas a su boca, sin los agregados
-en la botella que limitaría nuestra calificación Internacional.</textarea>
+            <textarea style="width: 1065px; height: 150px" name="txtPrincipal"><?php echo $data_BEinicio['txtPrincipal']; ?></textarea>
           </div>
 
         </div>
@@ -108,18 +150,15 @@ en la botella que limitaría nuestra calificación Internacional.</textarea>
 
         <div class="row">
 
-          <div class="col-md-4">
+          <div class="col-md-5">
           </div>
 
           <div class="col-md-1">
-            <input type="submit" value="GUARDAR">
+            <input type="hidden" name="Pag" value="2">
+            <input type="submit" value="Subir Cambios">
           </div>
 
           <div class="col-md-1">
-          </div>
-
-          <div class="col-md-1">
-            <input type="reset" value="Limpiar">
           </div>
 
           <div class="col-md-5">

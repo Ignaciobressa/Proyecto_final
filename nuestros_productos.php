@@ -8,13 +8,23 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <?php
+
+    require 'include/conexion.php';
+
+    $data_queryAdmin = mysqli_query($link, "SELECT * FROM BEadmin WHERE id = 1;");
+    $data_BEadmin = $data_queryAdmin->fetch_array(MYSQLI_ASSOC);
+  ?>
+
 </head>
-<body>
+<body background="../imagenes/<?php echo $data_BEadmin['imgFondo']; ?>" style="background-repeat: round; background-attachment: fixed;">
 
 <?php
-  require 'include/conexion.php';
   require 'include/menu.php';
   require 'include/logo.php';
+
+  $data_queryNuestrosP = mysqli_query($link, "SELECT * FROM BENuestrosP WHERE id = 1;");
+  $data_BENuestrosP = $data_queryNuestrosP->fetch_array(MYSQLI_ASSOC);
 
   $blend = mysqli_query($link, "SELECT name FROM Product WHERE id=1");
   $result = $blend->fetch_array(MYSQLI_ASSOC);
@@ -50,29 +60,21 @@
     <div class="texto_principal">
       <div class="row">
         <div class="col-md-12">
-          <h1>Nuestros Productos</h1>
+          <h1><?php echo $data_BENuestrosP['tituloNP']; ?></h1>
         </div>
       </div>
       <div class="row">
         <div class="col-md-12">
-          <h2><em>Familia Cecchin y Raices</em></h2>
+          <h2><em><?php echo $data_BENuestrosP['subtituloNP']; ?></em></h2>
         </div>
       </div>
       <br>
       <div class="row">
         <div class="col-md-12">
-            <p><em>Cosechamos  los frutos en el tiempo y espacio preciso,<br>
-              adecuando así, nuestro proceso de producción y <br>
-              elaboración natural acompañando al medioambiente,<br>
-              sosteniendo siempre el no uso de agroquímicos en el suelo<br>
-              y la viña, ni químicos en la botella para así poder acercar el <br>
-              producto a las mesas con todas sus propiedades orgánicas intactas.<br>
-              Vinos, aceites y jugos de uva, son trabajados con la misma filosofía<br>
-              que  desde hace más de 100 años, Santiago y María supieron transmitir<br>
-              cultivando este modo de generar verdaderos productos orgánicos.</em></p>
+            <p><em><?php echo $data_BENuestrosP['txtExp']; ?></em></p>
             <br>
             <br>
-            <h2>Nuestros Varietales</h2>
+            <h2><?php echo $data_BENuestrosP['titVar']; ?></h2>
         </div>
       </div>
       <div class="row">

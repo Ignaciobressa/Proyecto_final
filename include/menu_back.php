@@ -1,3 +1,14 @@
+
+<!--Conexion con base de datos y extraccion de datos del menu-->
+
+<?php
+  require "../include/conexion.php";
+
+  $data_queryAdmin = mysqli_query($link, "SELECT * FROM BEadmin WHERE id = 1;");
+  $data_BEadmin = $data_queryAdmin->fetch_array(MYSQLI_ASSOC);
+
+?>
+
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -20,25 +31,25 @@
             <?php
             if (basename($_SERVER["SCRIPT_FILENAME"], '.php')=="index_a") {
               echo "class='active'";
-            }?>><a href="index_a.php"><span class="glyphicon glyphicon-home"></span> Inicio</a></li>
+            }?>><a href="index_a.php"><span class="glyphicon glyphicon-home"></span> <?php echo $data_BEadmin['inicio']; ?></a></li>
 
             <li
               <?php
               if (basename($_SERVER["SCRIPT_FILENAME"], '.php')=="quienes_somos_a") {
                 echo "class='active'";
-              }?>><a href="quienes_somos_a.php"><span class="glyphicon glyphicon-eye-open"></span> Quiénes somos?</a></li>
+              }?>><a href="quienes_somos_a.php"><span class="glyphicon glyphicon-eye-open"></span> <?php echo $data_BEadmin['quienesSomos']; ?></a></li>
 
               <li
                 <?php
                 if (basename($_SERVER["SCRIPT_FILENAME"], '.php')=="nuestros_productos_a") {
                   echo "class='active'";
-                }?>><a href="nuestros_productos_a.php"><span class="glyphicon glyphicon-glass"></span> Nuestros Productos</a></li>
+                }?>><a href="nuestros_productos_a.php"><span class="glyphicon glyphicon-glass"></span> <?php echo $data_BEadmin['nuestrosP']; ?></a></li>
 
                 <li
                   <?php
                   if (basename($_SERVER["SCRIPT_FILENAME"], '.php')=="contacto_a") {
                     echo "class='active'";
-                  }?>><a href="contacto_a.php"><span class="glyphicon glyphicon-envelope"></span> Contacto</a></li>
+                  }?>><a href="contacto_a.php"><span class="glyphicon glyphicon-envelope"></span> <?php echo $data_BEadmin['contacto']; ?></a></li>
 
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -47,14 +58,15 @@
           <?php
           if (basename($_SERVER["SCRIPT_FILENAME"], '.php')=="registro_a") {
             echo "class='active'";
-          }?>><a href="registro_a.php"><span class="glyphicon glyphicon-user"></span> Registro</a></li>
+          }?>><a href="registro_a.php"><span class="glyphicon glyphicon-user"></span> <?php echo $data_BEadmin['registro']; ?></a></li>
 
           <li
             <?php
             if (basename($_SERVER["SCRIPT_FILENAME"], '.php')=="ingresar_a") {
               echo "class='active'";
-            }?>><a href="ingresar_a.php"><span class="glyphicon glyphicon-log-in"></span> Ingresar</a></li>
+            }?>><a href="ingresar_a.php"><span class="glyphicon glyphicon-log-in"></span> <?php echo $data_BEadmin['ingresar']; ?></a></li>
 
+          <li><a href="../include/logout.php"><span class="glyphicon glyphicon-off"></li>
     </ul>
     </div>
   </div>

@@ -13,9 +13,16 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="js/registro.js"></script>
+  <?php
+
+    require 'include/conexion.php';
+
+    $data_queryAdmin = mysqli_query($link, "SELECT * FROM BEadmin WHERE id = 1;");
+    $data_BEadmin = $data_queryAdmin->fetch_array(MYSQLI_ASSOC);
+  ?>
 
 </head>
-<body>
+<body background="imagenes/<?php echo $data_BEadmin['imgFondo']; ?>" style="background-repeat: round; background-attachment: fixed;">
 
 <!--Menu Superior-->
 <?php
@@ -28,54 +35,26 @@
     }
   }
 
- ?>
+ //Logo de la Empresa
 
-<!--Logo de la Empresa-->
-<?php
   require 'include/logo.php';
+
+  $data_queryRegistro = mysqli_query($link, "SELECT * FROM BEregistro WHERE id = 1;");
+  $data_BEregistro = $data_queryRegistro->fetch_array(MYSQLI_ASSOC);
+
  ?>
 
   <br>  <!--Formulario de Registro-->
 
   <form name="Registro" action="include/registro_usuario.php" method="post">
     <div id="contenedor">
+
       <div class="row">
+
         <div class="col-md-12">
-          <h3 style="text-align: center; color: white; font-family: arial sans-serif"><em>Registre una cuenta de manera <strong>totalmente gratuita</strong> para realizar consultas, <br>
-              pedir presupuestos o recibir promociones!!</em></h3>
+          <h3 style="text-align: center; color: white; font-family: arial sans-serif"><em><?php echo $data_BEregistro['tituloReg']; ?></em></h3>
         </div>
-      </div>
-      <br>
-      <div class="row">
-        <div class="col-md-6">
-          <div class="input-group">
-            <span class="input-group-addon" id="basic-addon1"><b>Nombre:</b></span>
-            <input type="text" class="form-control" name="name" placeholder="Coloque aquí su nombre" aria-describedby="basic-addon1" required>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="input-group">
-            <span class="input-group-addon" id="basic-addon1"><b>Apellido:</b></span>
-            <input type="text" class="form-control" name="lastName" placeholder="Coloque aquí su apellido" aria-describedby="basic-addon1" required>
-          </div>
-        </div>
-      </div>
 
-      <br>
-
-      <div class="row">
-        <div class="col-md-6">
-          <div class="input-group">
-            <span class="input-group-addon" id="basic-addon1"><b>Tel.:</b></span>
-            <input type="text" class="form-control" name="phone" placeholder="0294-4******" aria-describedby="basic-addon1">
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="input-group">
-            <span class="input-group-addon" id="basic-addon1"><b>E-Mail:</b></span>
-            <input type="email" class="form-control" name="email" placeholder="vinicultores@gmail.com" aria-describedby="basic-addon1" required>
-          </div>
-        </div>
       </div>
 
       <br>
@@ -85,9 +64,57 @@
         <div class="col-md-6">
 
           <div class="input-group">
+            <span class="input-group-addon" id="basic-addon1"><b><?php echo $data_BEregistro['nombreReg']; ?>:</b></span>
+            <input type="text" class="form-control" name="name" placeholder="<?php echo $data_BEregistro['PHnombreReg']; ?>" aria-describedby="basic-addon1" required>
+          </div>
 
-            <span class="input-group-addon"><b>Contraseña:</b></span>
-            <input type="password" id="pass" name="password" class="form-control" aria-label="Amount (to the nearest dollar)" placeholder="Escriba contraseña" required>
+        </div>
+
+        <div class="col-md-6">
+
+          <div class="input-group">
+            <span class="input-group-addon" id="basic-addon1"><b><?php echo $data_BEregistro['apellidoReg']; ?>:</b></span>
+            <input type="text" class="form-control" name="lastName" placeholder="<?php echo $data_BEregistro['PHapellidoReg']; ?>" aria-describedby="basic-addon1" required>
+          </div>
+
+        </div>
+
+      </div>
+
+      <br>
+
+      <div class="row">
+
+        <div class="col-md-6">
+
+          <div class="input-group">
+            <span class="input-group-addon" id="basic-addon1"><b><?php echo $data_BEregistro['telefonoReg']; ?>:</b></span>
+            <input type="text" class="form-control" name="phone" placeholder="<?php echo $data_BEregistro['PHtelefonoReg']; ?>" aria-describedby="basic-addon1">
+          </div>
+
+        </div>
+
+        <div class="col-md-6">
+
+          <div class="input-group">
+            <span class="input-group-addon" id="basic-addon1"><b><?php echo $data_BEregistro['emailReg']; ?>:</b></span>
+            <input type="email" class="form-control" name="email" placeholder="<?php echo $data_BEregistro['PHemailReg']; ?>" aria-describedby="basic-addon1" required>
+          </div>
+
+        </div>
+
+      </div>
+
+      <br>
+
+      <div class="row">
+
+        <div class="col-md-6">
+
+          <div class="input-group">
+
+            <span class="input-group-addon"><b><?php echo $data_BEregistro['passReg']; ?>:</b></span>
+            <input type="password" id="pass" name="password" class="form-control" aria-label="Amount (to the nearest dollar)" placeholder="<?php echo $data_BEregistro['PHpassReg']; ?>" required>
             <span class="input-group-addon"><span id="show-hide-passwd" action="hide" class="glyphicon glyphicon-eye-open"></span></span>
 
             </div>
@@ -95,8 +122,8 @@
 
         <div class="col-md-6">
           <div class="input-group">
-            <span class="input-group-addon" id="basic-addon2"><b>Confirmar contraseña:</b></span>
-            <input type="password" class="form-control" name="repassword" placeholder="Repita contraseña" aria-describedby="basic-addon2" required>
+            <span class="input-group-addon" id="basic-addon2"><b><?php echo $data_BEregistro['conPassReg']; ?>:</b></span>
+            <input type="password" class="form-control" name="repassword" placeholder="<?php echo $data_BEregistro['PHconPassReg']; ?>" aria-describedby="basic-addon2" required>
           </div>
         </div>
 
@@ -109,8 +136,8 @@
         <div class="col-md-4"></div>
 
         <div class="col-md-4" id="promocion">
-            <input type="checkbox" name="prom" checked>
-          <span>Desea recibir promociones?</span>
+            <input type="checkbox" name="prom" <?php if ($data_BEregistro['promReg'] == "on") { echo "checked";} ?>>
+          <span><?php echo $data_BEregistro['txtPromReg']; ?></span>
         </div>
 
         <div class="col-md-4"></div>
@@ -119,7 +146,7 @@
 
       <div class="row">
         <div class="col-md-12 reg">
-          <button type="submit" class="btn btn-default" name="registrar">Registrar</button>
+          <button type="submit" class="btn btn-default" name="registrar"><?php echo $data_BEregistro['txtBtnReg']; ?></button>
         </div>
       </div>
 

@@ -8,28 +8,39 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <?php
+
+    require 'include/conexion.php';
+
+    $data_queryAdmin = mysqli_query($link, "SELECT * FROM BEadmin WHERE id = 1;");
+    $data_BEadmin = $data_queryAdmin->fetch_array(MYSQLI_ASSOC);
+  ?>
+
 </head>
-<body>
+<body background="../imagenes/<?php echo $data_BEadmin['imgFondo']; ?>" style="background-repeat: round; background-attachment: fixed;">
+
 
 <?php
   require 'include/menu.php';
- ?>
 
-<?php
   require 'include/logo.php';
+
+  $data_queryQuienesS = mysqli_query($link, "SELECT * FROM BEQuienesS WHERE id = 1;");
+  $data_BEQuienesS = $data_queryQuienesS->fetch_array(MYSQLI_ASSOC);
+
  ?>
 
 <div id="contenedor_grande">
   <div class="container">
     <div clas="row">
       <div class="col-md-12">
-        <h1>¿Quienes Somos?</h1>
+        <h1><?php echo $data_BEQuienesS['tituloQS']; ?></h1>
       </div>
     </div>
     <br>
     <div clas="row">
       <div class="col-md-12">
-        <h2><i>Nuestra Historia</i></h2>
+        <h2><i><?php echo $data_BEQuienesS['subtituloQS']; ?></i></h2>
       </div>
     </div>
     <br>
@@ -37,18 +48,7 @@
       <div class="row">
         <div class="col-md-12">
           <div class="texto_principal">
-            <p><em>Cargando sólo sus sueños y una aventura por descubrir, <br>
-              Santiago Cecchin y María pisan suelo argentino allá<br>
-              por 1910, dejando atrás su tierra natal. Con claridad<br>
-              transmitieron su amor por la madre tierra, a quien se<br>
-              debía preservar con pasión y cariño artesanal. Allá por 1959<br>
-              Don Pedro y Jorge Cecchin abrazan esta tradición familiar,<br>
-              ​apuntalando aquel sueño con sus productos naturales,<br>
-              respetando el encanto por la vida natural y protegiendo a<br>
-              “la madre de todos los frutos”. Hoy, Alberto Cecchin consolida<br>
-              más de 100 años de productos artesanales libres de agregados químicos<br>
-              y nos invita a soñar un lugar mejor, a vivir el paisaje, a disfrutar<br>
-              esta casa, a apasionarse por el mundo orgánico, un mundo… para todos.</em></p>
+            <p><em><?php echo $data_BEQuienesS['txtPrincipalQS']; ?></em></p>
           </div>
         </div>
       </div>
