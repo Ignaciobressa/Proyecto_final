@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="../js/js_ingresar_a.js"></script>
+  <script type="text/javascript" src="../js/hide_show_pass.js"></script>
 </head>
 <body>
 <br><br>
@@ -58,8 +58,8 @@
         <div class="col-md-6">
           <div class="input-group">
             <span class="input-group-addon"><b>Contraseña:</b></span>
-            <input type="password" class="form-control" aria-label="Amount (to the nearest dollar)" placeholder="Escriba contraseña" name="passAdmin">
-            <span id="show-hide-passwd" action="hide" class="input-group-addon"><span class="glyphicon glyphicon-eye-open"></span></span>
+            <input type="password" id="pass" class="form-control" aria-label="Amount (to the nearest dollar)" placeholder="Escriba contraseña" name="passAdmin">
+            <span class="input-group-addon"><span id="show-hide-passwd" action="hide" class="glyphicon glyphicon-eye-open"></span></span>
           </div>
         </div>
 

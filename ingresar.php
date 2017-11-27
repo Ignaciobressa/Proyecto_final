@@ -12,7 +12,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/ingresar.js"></script>
+    <script type="text/javascript" src="js/hide_show_pass.js"></script>
     <?php
 
       require 'include/conexion.php';
@@ -67,8 +67,8 @@
             <div class="col-md-6">
               <div class="input-group">
                 <span class="input-group-addon"><b><?php echo $data_BEingreso['passIng']; ?>:</b></span>
-                <input type="password" name="pass" class="form-control" aria-label="Amount (to the nearest dollar)" placeholder="<?php echo $data_BEingreso['PHpassIng']; ?>">
-                <span id="show-hide-passwd" action="hide" class="input-group-addon"><span class="glyphicon glyphicon-eye-open"></span></span>
+                <input type="password" id="pass" name="pass" class="form-control" aria-label="Amount (to the nearest dollar)" placeholder="<?php echo $data_BEingreso['PHpassIng']; ?>">
+                <span action="hide" class="input-group-addon"><span id="show-hide-passwd" action="hide" class="glyphicon glyphicon-eye-open"></span></span>
               </div>
             </div>
           </div>

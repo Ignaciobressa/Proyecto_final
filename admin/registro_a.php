@@ -10,7 +10,6 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="js/registro.js"></script>
 
 </head>
 <body>
@@ -104,7 +103,7 @@
             <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" value="<?php echo $data_BEregistro['passReg']; ?>" name="passReg">
             <span class="input-group-addon"><b>:</b></span>
             <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" value="<?php echo $data_BEregistro['PHpassReg']; ?>" name="PHpassReg">
-            <span class="input-group-addon"><span id="show-hide-passwd" action="hide" class="glyphicon glyphicon-eye-open"></span></span>
+            <span class="input-group-addon"><span class="glyphicon glyphicon-eye-open"></span></span>
           </div>
         </div>
 

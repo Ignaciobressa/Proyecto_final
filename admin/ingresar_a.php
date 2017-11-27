@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/ingresar.js"></script>
   </head>
   <body>
 
@@ -78,7 +77,7 @@
                 <input type="texto" class="form-control" aria-label="Amount (to the nearest dollar)" value="<?php echo $data_BEingreso['passIng']; ?>" name="passIng">
                 <span class="input-group-addon"><b>:</b></span>
                 <input type="texto" class="form-control" aria-label="Amount (to the nearest dollar)" value="<?php echo $data_BEingreso['PHpassIng']; ?>" name="PHpassIng" style="width: 150px;">
-                <span id="show-hide-passwd" action="hide" class="input-group-addon"><span class="glyphicon glyphicon-eye-open"></span></span>
+                <span class="input-group-addon"><span class="glyphicon glyphicon-eye-open"></span></span>
               </div>
             </div>
 

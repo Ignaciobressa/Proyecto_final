@@ -12,7 +12,7 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="js/registro.js"></script>
+  <script type="text/javascript" src="js/hide_show_pass.js"></script>
   <?php
 
     require 'include/conexion.php';
@@ -123,7 +123,8 @@
         <div class="col-md-6">
           <div class="input-group">
             <span class="input-group-addon" id="basic-addon2"><b><?php echo $data_BEregistro['conPassReg']; ?>:</b></span>
-            <input type="password" class="form-control" name="repassword" placeholder="<?php echo $data_BEregistro['PHconPassReg']; ?>" aria-describedby="basic-addon2" required>
+            <input type="password" id="passCon" class="form-control" name="repassword" placeholder="<?php echo $data_BEregistro['PHconPassReg']; ?>" aria-describedby="basic-addon2" required>
+            <span class="input-group-addon"><span id="show-hide-passwd-con" actionCon="hideCon" class="glyphicon glyphicon-eye-open"></span></span>
           </div>
         </div>
 
