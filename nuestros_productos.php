@@ -27,6 +27,9 @@
   $data_BENuestrosP = $data_queryNuestrosP->fetch_array(MYSQLI_ASSOC);
 
   /*
+
+  Codigo escrito por Rami
+
   $blend = mysqli_query($link, "SELECT name FROM Product WHERE id=1");
   $result = $blend->fetch_array(MYSQLI_ASSOC);
   $malbecR = mysqli_query($link, "SELECT name FROM Product WHERE id=2");
@@ -91,22 +94,15 @@
         <?php
 
         $categorias = mysqli_query($link, "SELECT * FROM Category;");
-        //$data_categorias = $categorias->fetch_array(MYSQLI_ASSOC);
-
-        $productos = mysqli_query($link, "SELECT * FROM Product;");
-        //$data_productos = $productos->fetch_array(MYSQLI_ASSOC);
-
-
 
         while($data_categorias = $categorias->fetch_array(MYSQLI_ASSOC)) {
         ?>  <h3><em><?php echo $data_categorias['name']; ?></em></h3>
             <ul>
             <?php
+            $productos = mysqli_query($link, "SELECT * FROM Product WHERE idCategory = '".$data_categorias['id']."';");
             while($data_productos = $productos->fetch_array(MYSQLI_ASSOC)){
-              if($data_productos['idCategory'] == $data_categorias['id']){
             ?>  <li><?php echo $data_productos['name']; ?></li>
             <?php
-              }
             }?>
             </ul><?php
         }?>
@@ -115,6 +111,9 @@
 
 
         <?php /*
+
+        Codigo escrito por Rami
+
         <div class="col-md-6">
           <h3><em>Vinos Tintos</em></h3>
           <ul>

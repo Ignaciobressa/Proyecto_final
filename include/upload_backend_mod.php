@@ -24,30 +24,17 @@
     $face = $_POST['face'];
 
     $imgs = mysqli_query($link, "SELECT logo, imgFondo FROM BEadmin where id = 1;");
-    $result = $imgs->fetch_array(MYSQLI_ASSOC);
-/*
-    if (strlen($logo) < 3){
-      echo $logo;
-    } else {
+    $lastImg = $imgs->fetch_array(MYSQLI_ASSOC);
 
+    //Si los Imput Files no reciben ninguna imagen hay que declarar la var a la img que este en la DB
+
+    if(empty($logo)){
+      $logo = $lastImg['logo'];
     }
 
-    if ($logo == " ") {
-
-    } else {
-
-      $logo = $result['logo'];
-
+    if(empty($imgFondo)){
+      $imgFondo = $lastImg['imgFondo'];
     }
-
-    if ($imgFondo == " "){
-
-    } else {
-
-      $imgFondo = $result['imgFondo'];
-
-    }
-  */
 
     $query_admin = "UPDATE BEadmin SET logo = '$logo', inicio = '$inicio', quienesSomos = '$quienesSomos', nuestrosP = '$nuestrosP', contacto = '$contacto', registro = '$registro', ingresar = '$ingresar', imgFondo = '$imgFondo', footer = '$footer', face = '$face' WHERE id = 1;";
 

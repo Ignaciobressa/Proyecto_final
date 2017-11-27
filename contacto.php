@@ -61,8 +61,13 @@
           }?>
         </tr>
         <tr>
-          <td><div style="color: white; font-family: arial sans-serif; font-size: 12px"> <strong><?php echo $data_BEcontacto['telefonoCon']; ?> </font> </strong></div>
-          <td><input type="text" name="telefono" size="30" maxlength="30"> <br></td>
+          <?php if(isset($_SESSION['login'])){
+            ?><td><div style="color: white; font-family: arial sans-serif; font-size: 12px"> <strong><?php echo $data_BEcontacto['telefonoCon']; ?> </font> </strong></div>
+              <td><input  type="text" name="mail" size="30" maxlength="50" value="<?php echo $_SESSION['phone']; ?>"> <br></td><?php
+          } else{
+            ?><td><div style="color: white; font-family: arial sans-serif; font-size: 12px"> <strong><?php echo $data_BEcontacto['telefonoCon']; ?> </font> </strong></div>
+            <td><input  type="text" name="mail" size="30" maxlength="50"> <br></td><?php
+          }?>
         </tr>
         <tr>
           <td><div style="color: white; font-family: arial sans-serif; font-size: 12px"> <strong><?php echo $data_BEcontacto['empresaCon']; ?> </font> </strong></div>
