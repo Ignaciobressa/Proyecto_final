@@ -104,8 +104,13 @@ Campos para completar:
  Requisitos:
  
  *PHP
- *Mysql
+ *MySQL
  *Servidor apache (para correrlo en modo Local)
  *BDVinos.sql (Es el script para crear la base de datos que utiliza el sitio. Se encuentra en la carpeta SQL).
  
- 
+ El sitio esta dividio en 2 ya que posee un frontend y un backend. 
+ El frontend esta compuesto por todo lo que esta a la vista del usuario final.
+ El backend es únicamente accesible para las cuentas de administradores ya que aquí se le permite al administrador
+ del sitio modificar cualquier dato que aparece en el frontend. 
+ Este backend trabaja de la mano con la base de datos MySQL y php para poder hacer las consultas (query) y modificar 
+ diversos aspectos del frontend, directamente desde el backend.
