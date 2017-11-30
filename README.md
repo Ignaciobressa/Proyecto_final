@@ -1,9 +1,13 @@
 Proyecto Web destinado al representante de la Bodega Cecchin en la patagonia.
 =====
 **Proyecto final web 1er Año de la materia Proyecto de Software I**
+-
 **Profesor:** Lucas Passalaqcua.
+-
 **Instituto Capacitas.**
+-
 **Alumnos:** Facundo Sautu, Ignacio Bressa, Ramiro Lezcano.
+-
 **Año:** 2017.
 
 =======
