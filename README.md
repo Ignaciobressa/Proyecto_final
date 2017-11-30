@@ -44,11 +44,15 @@ Para poder contactarse con el vendedor usted necesitara completar los campos dis
 para luego poder escribir su mensaje en el área de texto.
 Los campos son:
 
-**Nombre** debe introducir aquí su nombre./ln
-**Email** debe introducir aquí su email./ln
-**Teléfono** debe introducir aquí su teléfono (opcional)/ln
+**Nombre** debe introducir aquí su nombre.
+-
+**Email** debe introducir aquí su email.
+-
+**Teléfono** debe introducir aquí su teléfono (opcional)
+-
 **Empresa** debe introducir aquí su empresa en caso de terner una, sino puede escribir "Particular" o dejar
-el espacio en blanco (opcional)./ln
+el espacio en blanco (opcional).
+-
 **Mensaje** debe escribir su mensaje.
 ---
 
