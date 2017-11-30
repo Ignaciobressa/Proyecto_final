@@ -8,9 +8,9 @@ Proyecto Web destinado al representante de la Bodega Cecchin en la patagonia.
 
 ------------------------------------------------------------------------------------------
 
-Descripcion del proyecto:
+@Descripcion del proyecto:
 
-  @El proyecto se basa de un sistema Online orientado a la venta de vinos orgánicos.
+  El proyecto se basa de un sistema Online orientado a la venta de vinos orgánicos.
   Se trata de un sitio tanto informativo como también capáz de permitirle al usuario
   realizar consultas y gestionar compras comunicandose directamente con el vendedor.
   Detras del sitio correrá una base de datos donde se alojarán los e-mails y la 
