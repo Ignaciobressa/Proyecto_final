@@ -30,7 +30,7 @@ Menu
 ---
 Se dispone de un **menu** en el cual se pueden observar los siguientes items:
 
-**Inicio** es la página principal del sitio web.
+Inicio **es la página principal del sitio web.**
 -
 **Quienes Somos** aquí se puede leer una breve reseña de la historia de la bodega.
 -
