@@ -10,7 +10,7 @@ Proyecto Web destinado al representante de la Bodega Cecchin en la patagonia.
 -
 **Año:** 2017.
 
-=======
+=====
 
 Descripcion del proyecto:
 
@@ -96,3 +96,16 @@ Campos para completar:
 **Email** debe introducir su email registrado.
 -
 **Contraseña** debe introducir su contraseña registrada.
+ =====
+ 
+ Guia para el programador
+ ---
+ 
+ Requisitos:
+ 
+ *PHP
+ *Mysql
+ *Servidor apache (para correrlo en modo Local)
+ *BDVinos.sql (Es el script para crear la base de datos que utiliza el sitio. Se encuentra en la carpeta SQL).
+ 
+ 
