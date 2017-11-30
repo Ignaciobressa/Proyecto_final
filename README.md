@@ -98,8 +98,8 @@ Campos para completar:
 
 **Contraseña** debe introducir su contraseña registrada.
  
- ===
- Guia del programador
+ 
+ </> Guia del programador
  ===
  
  Requisitos:
