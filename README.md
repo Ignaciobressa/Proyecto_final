@@ -53,16 +53,16 @@ Para poder contactarse con el vendedor usted necesitara completar los campos dis
 para luego poder escribir su mensaje en el área de texto.
 Los campos son:
 
-**Nombre** debe introducir aquí su nombre.
+"Nombre" debe introducir aquí su nombre.
 -
-**Email** debe introducir aquí su email.
+"Email" debe introducir aquí su email.
 -
-**Teléfono** debe introducir aquí su teléfono (opcional)
+"Teléfono" debe introducir aquí su teléfono (opcional)
 -
-**Empresa** debe introducir aquí su empresa en caso de terner una, sino puede escribir "Particular" o dejar
+"Empresa" debe introducir aquí su empresa en caso de terner una, sino puede escribir "Particular" o dejar
 el espacio en blanco (opcional).
 -
-**Mensaje** debe escribir su mensaje.
+"Mensaje" debe escribir su mensaje.
 ---
 
 Registro
@@ -71,19 +71,19 @@ Registro
 Este es el formulario de registro que deberá completar para poder crear una cuenta en nuestro sitio.
 Los campos que deberá llenar son los siguientes:
 
-**Nombre** debe introducir aquí su nombre.
+"Nombre" debe introducir aquí su nombre.
 -
-**Apellido** debe introducir su apellido.
+"Apellido" debe introducir su apellido.
 -
-**Email** debe introducir aquí su email.
+"Email" debe introducir aquí su email.
 -
-**Contraseña** debe introducir aquí su contraseña.
+"Contraseña" debe introducir aquí su contraseña.
 -
-**Confirmacion de contraseña** debe volver a ingresar la misma clave que ingresó en el campo anterior.
+"Confirmacion de contraseña" debe volver a ingresar la misma clave que ingresó en el campo anterior.
 -
-**Teléfono** debe introducir aquí su teléfono (opcional).
+"Teléfono" debe introducir aquí su teléfono (opcional).
 -
-**Boton de enviar** debe presionarlo luego de completar el formulario para que se pueda registrar.
+"Boton de enviar" debe presionarlo luego de completar el formulario para que se pueda registrar.
 ---
 
 Ingresar
