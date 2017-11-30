@@ -98,19 +98,14 @@ Campos para completar:
 **Contraseña** debe introducir su contraseña registrada.
  =====
  
- Guia para el programador
- ---
+ Guia del programador
+ ===
  
  Requisitos:
  
- **PHP**
- -
- **MySQL**
- -
- **Servidor apache** (***para correrlo en modo Local***).
- -
- **BDVinos.sql** (***Es el script para crear la base de datos que utiliza el sitio. Se encuentra en la carpeta SQL***).
- 
+ PHP, MySQL, Servidor apache (para correrlo en modo Local) y el archivo BDVinos.sql (que es el script para crear la 
+ base de datos que utiliza el sitio. Se encuentra en la carpeta SQL).
+ ---
  El sitio esta dividio en 2 ya que posee un frontend y un backend. 
  El frontend esta compuesto por todo lo que esta a la vista del usuario final.
  El backend es únicamente accesible para las cuentas de administradores ya que aquí se le permite al administrador
