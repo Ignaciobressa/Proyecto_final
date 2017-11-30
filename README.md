@@ -25,7 +25,7 @@ para la venta, como también otros datos propios del backend.
 ======  
 
 Guia de Usuario:
----
+===
 Menu
 ---
 Se dispone de un **menu** en el cual se pueden observar los siguientes items:
@@ -47,7 +47,7 @@ registro.
 ---
 
 Contacto
----
+===
 
 Para poder contactarse con el vendedor usted necesitara completar los campos disponibles con sus datos, 
 para luego poder escribir su mensaje en el área de texto.
@@ -66,7 +66,7 @@ el espacio en blanco (opcional).
 ---
 
 Registro
----
+===
 
 Este es el formulario de registro que deberá completar para poder crear una cuenta en nuestro sitio.
 Los campos que deberá llenar son los siguientes:
@@ -87,7 +87,7 @@ Los campos que deberá llenar son los siguientes:
 ---
 
 Ingresar
----
+===
 
 En este formulario de 2 campos debe introducir el email y la caontraseña que utilizó para crear su cuenta
 en nuestro sitio.
@@ -96,7 +96,6 @@ Campos para completar:
 **Email** debe introducir su email registrado.
 -
 **Contraseña** debe introducir su contraseña registrada.
- =====
  
  Guia del programador
  ===
