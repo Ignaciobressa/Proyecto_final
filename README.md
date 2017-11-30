@@ -27,12 +27,17 @@ Menu
 Se dispone de un **menu** en el cual se pueden observar los siguientes items:
 
 **Inicio** es la página principal del sitio web.
+-
 **Quienes Somos** aquí se puede leer una breve reseña de la historia de la bodega.
+-
 **Nuestros Productos** se listan todos los productos disponibles para la venta al público.
+-
 **Contacto** aquí existe un formulario de contacto para que pueda realizar consultas, pedir 
 presupuestos o informarse sobre algun tipo de promoción comunicandose directamente con el vendedor.
+-
 **Registro** aquí puede crear una cuenta de ususario para nuestro sitio y asi mantenerse infomado sobre
 las últimas novedades o promociones.
+-
 **Ingresar** aquí usted podrá ingresar con su cuenta ya registrada con anterioridad en el formulario de
 registro.
 ---
@@ -63,11 +68,17 @@ Este es el formulario de registro que deberá completar para poder crear una cue
 Los campos que deberá llenar son los siguientes:
 
 **Nombre** debe introducir aquí su nombre.
+-
 **Apellido** debe introducir su apellido.
+-
 **Email** debe introducir aquí su email.
+-
 **Contraseña** debe introducir aquí su contraseña.
+-
 **Confirmacion de contraseña** debe volver a ingresar la misma clave que ingresó en el campo anterior.
+-
 **Teléfono** debe introducir aquí su teléfono (opcional).
+-
 **Boton de enviar** debe presionarlo luego de completar el formulario para que se pueda registrar.
 ---
 
@@ -79,4 +90,5 @@ en nuestro sitio.
 Campos para completar:
 
 **Email** debe introducir su email registrado.
+-
 **Contraseña** debe introducir su contraseña registrada.
