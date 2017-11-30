@@ -98,10 +98,12 @@ Campos para completar:
 
 **Contraseña** debe introducir su contraseña registrada.
  
+ ===
  Guia del programador
  ===
  
  Requisitos:
+ ---
  
  ***PHP*** 
  
