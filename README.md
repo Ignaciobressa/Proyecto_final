@@ -6,18 +6,18 @@ Proyecto Web destinado al representante de la Bodega Cecchin en la patagonia.
 **Alumnos:** Facundo Sautu, Ignacio Bressa, Ramiro Lezcano.
 **Año:** 2017.
 
-------------------------------------------------------------------------------------------
+=======
 
-@Descripcion del proyecto:
+Descripcion del proyecto:
 
-  El proyecto se basa de un sistema Online orientado a la venta de vinos orgánicos.
-  Se trata de un sitio tanto informativo como también capáz de permitirle al usuario
-  realizar consultas y gestionar compras comunicandose directamente con el vendedor.
-  Detras del sitio correrá una base de datos donde se alojarán los e-mails y la 
-  información personal de cada uno de los usuarios que hayan realizado previamente 
-  algún tipo de consulta al vendedor o hayan registrado una cuenta en nuestro sitio. 
-  También estan alojados en dicha base de datos los productos que se encuentran disponibles
-  para la venta, como también otros datos propios del backend.
+  #El proyecto se basa de un sistema Online orientado a la venta de vinos orgánicos.
+  #Se trata de un sitio tanto informativo como también capáz de permitirle al usuario
+  #realizar consultas y gestionar compras comunicandose directamente con el vendedor.
+  #Detras del sitio correrá una base de datos donde se alojarán los e-mails y la 
+  #información personal de cada uno de los usuarios que hayan realizado previamente 
+  #algún tipo de consulta al vendedor o hayan registrado una cuenta en nuestro sitio. 
+  #También estan alojados en dicha base de datos los productos que se encuentran disponibles
+  #para la venta, como también otros datos propios del backend.
 ======  
 
 Guia de Usuario:
