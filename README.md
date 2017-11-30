@@ -30,19 +30,19 @@ Menu
 ---
 Se dispone de un **menu** en el cual se pueden observar los siguientes items:
 
-Inicio **es la página principal del sitio web.**
+"Inicio" es la página principal del sitio web.
 -
-**Quienes Somos** aquí se puede leer una breve reseña de la historia de la bodega.
+"Quienes Somos" es la página donde se puede leer una breve reseña de la historia de la bodega.
 -
-**Nuestros Productos** se listan todos los productos disponibles para la venta al público.
+"Nuestros Productos" aquí se listan todos los productos disponibles para la venta al público.
 -
-**Contacto** aquí existe un formulario de contacto para que pueda realizar consultas, pedir 
+"Contacto" este es el formulario de contacto para que pueda realizar consultas, pedir 
 presupuestos o informarse sobre algun tipo de promoción comunicandose directamente con el vendedor.
 -
-**Registro** aquí puede crear una cuenta de ususario para nuestro sitio y asi mantenerse infomado sobre
+"Registro" aquí puede crear una cuenta de ususario para nuestro sitio y asi mantenerse infomado sobre
 las últimas novedades o promociones.
 -
-**Ingresar** aquí usted podrá ingresar con su cuenta ya registrada con anterioridad en el formulario de
+"Ingresar" aquí usted podrá ingresar con su cuenta ya registrada con anterioridad en el formulario de
 registro.
 ---
 
